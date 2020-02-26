@@ -13,10 +13,11 @@
   .carousel__container {
     position: fixed;
     display: flex;
-    background-color: black;
-    width: 50%;
-    height: 50%;
+    justify-content: center;
+    background-color: pink;
+    /* Just temporary colours so that I can see the modal in front of the background */
+    width: 75%;
+    height: 40%;
     border-radius: 10%;
-    box-shadow: 10px 5px 5px black;
   }
 }
