@@ -1,4 +1,5 @@
-html,
-body {
-  margin: 0;
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  body {
+    margin: 0;
+  }
 }
