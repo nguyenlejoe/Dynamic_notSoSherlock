@@ -9,7 +9,7 @@
     background-color: grey;
     position: fixed;
     left: 2%;
-    top: 2%;
+    top: 2%;    
 }
 #menuPopup{
     height: 100vh;
@@ -31,6 +31,7 @@
     background-color: aqua;
     text-align: center;
     font-size: 25px;
+    cursor: pointer;
 }
 
 #app{
@@ -71,6 +72,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 #start{
     width: 50%;
