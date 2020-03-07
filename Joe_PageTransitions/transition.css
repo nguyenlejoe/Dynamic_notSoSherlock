@@ -1,0 +1,51 @@
+@media screen and (min-width: 375px) and (max-width: 812px) {
+    body{
+    margin: 0;
+    }
+    
+    #app{
+        width: 100vw;
+        height: 100vh;   
+        overflow: hidden;
+    }
+    
+    #page1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blueviolet;
+        width: 100vw;
+        height: 100vh;
+    }
+    #page2{
+        display: none;
+        background-color: orange;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #page3{
+        display: none;
+        background-color: red;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #page4{
+        display: none;
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nextButton{
+        font: 100px;
+        background-color: white;
+        width: 100px;
+        height: 100px;
+    }
+}
