@@ -1,0 +1,14 @@
+body{
+    background-color: green;
+}
+#crimeScene{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#crimeScene{
+    height: 60vh;
+    width: 90vw;
+    background-color: grey;
+}

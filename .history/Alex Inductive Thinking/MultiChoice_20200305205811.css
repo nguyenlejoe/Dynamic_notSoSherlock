@@ -1,0 +1,56 @@
+
+body{
+    background-color: green;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#crimeScene{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 97vw;
+    background-color: grey;
+    justify-content: center;
+
+
+}
+.evidence{
+    width: 90%;
+    height: 300px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+
+
+
+
+#multiChoice{
+    background-color:bisque;
+    width: 97vw;
+    height: 40vh;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.InductiveChoice{
+    width: 80%;
+    height: 30%;
+    background-color: blue;
+    border-radius: 05%;
+}
+
+
+
+
+
+
+

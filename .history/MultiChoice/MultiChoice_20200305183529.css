@@ -1,0 +1,26 @@
+
+body{
+    background-color: green;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#crimeScene{
+    height: 70vh;
+    width: 97vw;
+    background-color: grey;
+}
+
+#multiChoice{
+    background-color:bisque
+    width: 100%;
+    height: 30%;
+}
+
+
+
+
+

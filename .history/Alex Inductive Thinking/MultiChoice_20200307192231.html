@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inductive Thinking</title>
+        <link rel="stylesheet" href="MultiChoice.css">
+    </head>
+    <body>
+        <div id="clueStage">
+            <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
+            <div id="crimeScene">
+                <div class="evidence" id="clue1" onclick="displayClue1()"></div>
+                <div class="evidence" id="clue2" onclick="displayClue2()"></div>
+                <div class="evidence" id="clue3" onclick="displayClue3()"></div>
+            </div>
+            <div id="multiChoice">
+                <button onclick="answerA()" class="InductiveChoice" name="1" id="buttonA">1</button>
+                <button onclick="answerB()" class="InductiveChoice" name="2" id="buttonB">2</button>
+                <button onclick="answerC()" class="InductiveChoice" name="3" id="buttonC">3</button>
+        </div> 
+        </div>
+        <script src="MultiChoice.js"></script>
+    </body>
+    
+</html>

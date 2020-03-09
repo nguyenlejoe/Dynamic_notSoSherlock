@@ -1,0 +1,12 @@
+body{
+    background-color: green;
+}
+#roof{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#crimeScene{
+    height: 60%;
+}
