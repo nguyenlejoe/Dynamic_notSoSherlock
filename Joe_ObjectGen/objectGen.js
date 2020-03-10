@@ -1,10 +1,8 @@
-var hamStatus = false;
-
+var mainCulprit;
 var mainCrime;
 var mainHouse;
-var mainCulprit;
-var houseNum;
 
+//////////////////////////OBJECT START///////////////////////////////
 var crimes = {
     inductiveCrimes:[
         {
@@ -83,84 +81,23 @@ var town = {
     ]
 }
 
+//////////////////////////OBJECT END///////////////////////////////
 
-
-function questionRandom(){
+function gameGen(){
+    //Random Generation of number between 0-2 for each object
     var culprit = Math.floor(Math.random() * 3);
     var crime =  Math.floor(Math.random() * 3);
     var house = Math.floor(Math.random() * 3);
-     
+
+    //Grabbing properties from object depending on the number
     mainCulprit = townsPeople.people[culprit].name;
     mainCrime = crimes.inductiveCrimes[crime].title;
     mainHouse = town.houses[house].owner;
+
     console.log("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house" );
-
 }
 
-function keepData(){
-    console.log("The crime is " + mainCrime + " and it is in " + mainHouse +"'s house"+ " the culprit is " + mainCulprit);
-}
+gameGen();
 
-function checkHouse(houseNum){
-    switch(houseNum){
-        case 1:
-        if(mainHouse === "Henry"){
-            console.log("its working");
-            alert("You have found the crime!");
-        }
-        else{
-            alert("There seems to be nothing here");
-        }
-        break;
+document.writeln("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house");
 
-        case 2:
-        if(mainHouse === "Alex"){
-            alert("You have found the crime!");
-        }
-        else{
-            alert("There seems to be nothing here");
-        }
-        break;
-
-        case 3:
-        if(mainHouse === "Noah"){
-            alert("You have found the crime!");
-        }
-        else{
-            alert("There seems to be nothing here");
-        }
-        break;
-
-        default:
-        break;
-    }
-
-    
-}
-
-
-
-function hamButton(){
-    if(hamStatus === false){
-        document.querySelector("#menuPopup").style.left = "0";
-        hamStatus = true;
-    }
-    else{
-        document.querySelector("#menuPopup").style.left = "-80%";  
-        hamStatus = false;
-    }
-}
-
-function slide(){
-    document.querySelector("#test").style.opacity = "0";
-    document.querySelector("#backHome").style.display = "inline";
-    console.log("test");
-    keepData();
-}
-
-function slideBackHome(){
-    hamButton();
-    document.querySelector("#test").style.opacity = "100%";
-}
-
-questionRandom();

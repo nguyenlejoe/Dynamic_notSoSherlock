@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="transition.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="page1">
+                <button id="nextButton" onclick="pageSlide('page1' ,'page2')">NEXT</button>
+            </div>
+            <div id="page2">
+                <button id="nextButton" onclick="pageSlide('page2' ,'page3')">NEXT</button>
+            </div>
+            <div id="page3">
+                <button id="nextButton" onclick="pageSlide('page3' ,'page4')">NEXT</button>
+            </div> 
+            <div id="page4">
+                <button id="nextButton" onclick="pageSlide('page4' ,'page5')">NEXT</button> 
+            </div> 
+
+        </div>
+        <script src="transition.js"></script>
+    </body>
+</html>
