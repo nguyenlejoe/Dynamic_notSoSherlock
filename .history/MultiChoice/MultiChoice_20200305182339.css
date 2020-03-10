@@ -1,0 +1,12 @@
+body{
+    background-color: green;
+}
+#app{
+    display: flex;
+}
+
+#crimeScene{
+    height: 60vh;
+    width: 90vw;
+    background-color: grey;
+}

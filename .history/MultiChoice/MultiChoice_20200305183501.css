@@ -1,0 +1,22 @@
+@media screen and (min-width: 375px) and (max-width: 812px){
+body{
+    background-color: green;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#crimeScene{
+    height: 70vh;
+    width: 97vw;
+    background-color: grey;
+}
+
+
+
+
+
+
+}
