@@ -95,9 +95,9 @@ function gameGen(){
 
     if(firstNight === true){
         //Random Generation of number between 0-2 for each object
-        var culpritNum = Math.floor(Math.random() * 3);
-        var crimeNum =  Math.floor(Math.random() * 3);
-        var houseNum = Math.floor(Math.random() * 3);
+        var culpritNum = Math.floor(Math.random() * dayState.culpritTrack.length);
+        var crimeNum =  Math.floor(Math.random() * dayState.crimeTrack.length);
+        var houseNum = Math.floor(Math.random() * dayState.houseTrack.length);
 
         //Grabbing properties from object depending on the number
         mainCulprit = dayState.culpritTrack[culpritNum];
@@ -109,8 +109,8 @@ function gameGen(){
         console.log("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house" );
     }
     else{
-        crimeNum =  Math.floor(Math.random() * 3);
-        houseNum = Math.floor(Math.random() * 3);
+        crimeNum =  Math.floor(Math.random() * dayState.crimeTrack.length);
+        houseNum = Math.floor(Math.random() * dayState.houseTrack.length);
 
         mainCrime = dayState.crimeTrack[crimeNum];
         mainHouse = dayState.houseTrack[houseNum];
