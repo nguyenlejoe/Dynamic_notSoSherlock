@@ -1,67 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="button.css" />
-    <link rel="stylesheet" href="carousel.css" />
-  </head>
-  <body>
-    <!--------------JOE------------------------------------->
-    
-    <div id="app">
-            <div id="startingScreen">
-                
-                <div id="title">
-                    <h1>Not So Sherlock</h1>
-                </div>
-                <div id="buttons">
-                    <div id="start" onclick="pageSlide('start', 'crimeHouse')">Start</a></div>
-                    <div id="tutorial" onclick="">Tutorial</div>
-                </div>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="./Alex Inductive Thinking/MultiChoice.css">
+    </head>
+    <body>
+        <div id="app">
+
+          <!-- JOE -->
+
+            <!-- STARTING PAGE -->
+          <div id="startingPage" class="pages">
+              
+              <div id="title">
+                <p>NOT SO SHERLOCK</p>
+              </div>
+              
+              <div id="sherlockGif"></div>
+              
+              <div id="options">
+                <div id="start" class="buttons" onclick="pageSlide('startingPage', 'townPage')">START</div>
+                <div id="tutorial" class="buttons">TUTORIAL</div>
+              </div>
+
             </div>
 
-            <div id="menuPopup">
-                <div class="menuItems">Music</div>
-                <div class="menuItems">Sound FX</div>
-                <div class="menuItems">Display</div>
-                <div class="menuItems" id="backHome" onclick="">Back to home</div>
-            </div>
-            <div id="menuButton" onclick="hamButton()"></div>
-
-            <div id="crimeHouse" class="pages">
-              <div id="startHouses">
-                <div class="houses" id="houseOne" onclick="checkHouse(1)">Henry</div>
-                <div class="houses" id="houseTwo" onclick="checkHouse(2)">Alex</div>
-                <div class="houses" id="houseThree" onclick="checkHouse(3)">Noah</div>
+            <!-- TOWN PAGE -->
+            <div id="townPage" class="pages">
+              <div id="town">
+                <div class="house" onclick="checkCrimeHouse(1)">Henry</div>
+                <div class="house" onclick="checkCrimeHouse(2)" >Alex</div>
+                <div class="house" onclick="checkCrimeHouse(3)">Noah</div>
+                <div class="house" onclick="checkCrimeHouse(4)">Joe</div>
+                <div class="house" onclick="checkCrimeHouse(5)">Aksel</div>
               </div>
             </div>
-            
-            
 
-    </div>
-    <!------------------------------------------------------->
-
-    <!--------------ALEX------------------------------------->
-
-    <!------------------------------------------------------->
-
-    <!--------------NOAH------------------------------------->
-
-    <div class="carousel">
-      <div class="carousel__container">
-        <div class="carousel__container--avatar"></div>
-        <div class="carousel__container--textbox"></div>
-        <div class="button--arrow"></div>
-        <div class="button">It was him!</div>
-      </div>
-    </div>
-
-    <!------------------------------------------------------->
-
-    <script src="app.js"></script>
-    <script src="./Joe_PageTransitions/transition.js"></script>
-    <script src="carousel.js"></script>
-  </body>
+            <!-- ALEX -->
+            <div id="clueStage" class="pages">
+                <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
+                <div id="crimeScene">
+                    <div class="evidence" id="clue1" onclick="displayClue1()"></div>
+                    <div class="evidence" id="clue2" onclick="displayClue2()"></div>
+                    <div class="evidence" id="clue3" onclick="displayClue3()"></div>
+                </div>
+                <div id="multiChoice">
+                    <button onclick="answerA()" class="InductiveChoice" name="1" id="buttonA">1</button>
+                    <button onclick="answerB()" class="InductiveChoice" name="2" id="buttonB">2</button>
+                    <button onclick="answerC()" class="InductiveChoice" name="3" id="buttonC">3</button>
+            </div> 
+        </div>
+        <script src="./Alex Inductive Thinking/MultiChoice.js"></script>
+        <script src="./Joe_ObjectGen/objectGen.js"></script>
+        <script src="./Joe_CrimeHouseCheck/crimeHouse.js"></script>
+        <script src="app.js"></script>
+        <script src="./Joe_PageTransitions/transition.js"></script>
+        
+        
+        
+    </body>
 </html>

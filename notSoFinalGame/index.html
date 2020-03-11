@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <body>
+    <!--------------JOE------------------------------------->
+    
+    <div id="app">
+            <div id="startingScreen">
+                
+                <div id="title">
+                    <h1>Not So Sherlock</h1>
+                </div>
+                <div id="buttons">
+                    <div id="start" onclick="pageSlide('start', 'crimeHouse')">Start</a></div>
+                    <div id="tutorial" onclick="">Tutorial</div>
+                </div>
+            </div>
+
+            <div id="menuPopup">
+                <div class="menuItems">Music</div>
+                <div class="menuItems">Sound FX</div>
+                <div class="menuItems">Display</div>
+                <div class="menuItems" id="backHome" onclick="">Back to home</div>
+            </div>
+            <div id="menuButton" onclick="hamButton()"></div>
+
+            <div id="crimeHouse" class="pages">
+              <div id="startHouses">
+                <div class="houses" id="houseOne" onclick="checkHouse(1)">Henry</div>
+                <div class="houses" id="houseTwo" onclick="checkHouse(2)">Alex</div>
+                <div class="houses" id="houseThree" onclick="checkHouse(3)">Noah</div>
+              </div>
+            </div>
+            
+            
+
+    </div>
+    <!------------------------------------------------------->
+
+    <!--------------ALEX------------------------------------->
+
+    <!------------------------------------------------------->
+
+    <!--------------NOAH------------------------------------->
+
+    <div class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__container--avatar"></div>
+        <div class="carousel__container--textbox"></div>
+        <div class="button--arrow"></div>
+        <div class="button">It was him!</div>
+      </div>
+    </div>
+
+    <!------------------------------------------------------->
+
+    <script src="app.js"></script>
+    <script src="./Joe_PageTransitions/transition.js"></script>
+    <script src="carousel.js"></script>
+  </body>
+</html>
