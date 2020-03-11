@@ -1,9 +1,17 @@
 var mainCulprit;
 var mainCrime;
 var mainHouse;
+var firstNight = true;
 
 //////////////////////////OBJECT START///////////////////////////////
-var crimes = {
+var dayState = {
+    crimeTrack : ["Cookie Crime", "Stolen V-Bucks", "Stolen Toys", "Stolen Candy", "Broken Nerf gun"],
+    houseTrack : ["Henry", "Alex", "Noah", "Joe", "Aksel"],
+    culpritTrack : ["Henry", "Alex", "Noah", "Joe", "Aksel"]
+}
+
+
+var officalCrimes = {
     inductiveCrimes:[
         {
             title:"Cookie crime",
@@ -84,17 +92,34 @@ var town = {
 //////////////////////////OBJECT END///////////////////////////////
 
 function gameGen(){
-    //Random Generation of number between 0-2 for each object
-    var culprit = Math.floor(Math.random() * 3);
-    var crime =  Math.floor(Math.random() * 3);
-    var house = Math.floor(Math.random() * 3);
 
-    //Grabbing properties from object depending on the number
-    mainCulprit = townsPeople.people[culprit].name;
-    mainCrime = crimes.inductiveCrimes[crime].title;
-    mainHouse = town.houses[house].owner;
+    if(firstNight === true){
+        //Random Generation of number between 0-2 for each object
+        var culpritNum = Math.floor(Math.random() * 3);
+        var crimeNum =  Math.floor(Math.random() * 3);
+        var houseNum = Math.floor(Math.random() * 3);
 
-    console.log("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house" );
+        //Grabbing properties from object depending on the number
+        mainCulprit = dayState.culpritTrack[culpritNum];
+        mainCrime = dayState.crimeTrack[crimeNum];
+        mainHouse = dayState.houseTrack[houseNum];
+
+        firstNight = false;
+
+        console.log("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house" );
+    }
+    else{
+        crimeNum =  Math.floor(Math.random() * 3);
+        houseNum = Math.floor(Math.random() * 3);
+
+        mainCrime = dayState.crimeTrack[crimeNum];
+        mainHouse = dayState.houseTrack[houseNum];
+
+        dayState.crimeTrack.splice(crimeNum,1);
+        dayState.houseTrack.splice(houseNum,1);
+
+    }
+    
 }
 
 gameGen();

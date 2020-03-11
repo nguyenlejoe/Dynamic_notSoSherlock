@@ -1,168 +1,85 @@
 @media screen and (min-width: 375px) and (max-width: 812px) {
-  body {
+body{
     margin: 0;
-  }
-  /* Joe  --------------*/
-  #menuButton{
-    width: 15%;
-    height: 8%;
-    background-color: grey;
-    position: fixed;
-    left: 2%;
-    top: 2%;    
-}
-
-.pages{
-    width: 100vw;
-    height:100vh;
-    color: aquamarine;
-    display: none;
-    
-}
-#menuPopup{
-    height: 100vh;
-    width: 80%;
-    position: fixed;
-    left: -80%;
-    opacity: 70%; 
-    transition: left 0.5s;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column; 
-}
-.menuItems{
-    height: 5%;
-    width: 50%;
-    margin: 10px;
-    background-color: aqua;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
 }
 
 #app{
+    width: 100vw;
     height: 100vh;
-    width: 100vw;
-    background-color: darkcyan;
-    overflow: hidden; 
-
+    overflow: hidden;
 }
 
-#backHome{
-  display: none;
-}
-
-#startingScreen{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: darkcyan;
-    position: absolute;
-    opacity: 100%;
-    transition: opacity 0.1s;
-}
-
-#title{
-    height: 40%;
-    width: 100vw;
-    text-align: center;
-
-}
-
-#buttons{
-    height: 60%;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-#start{
-    width: 50%;
-    height:10%;
-    margin: 10px;
-    background-color: grey;
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    border-radius: 15px;
-}
-
-#tutorial{
-    width: 50%;
-    height:10%;
-    margin: 10px;
-    background-color: grey;
-    text-align: center;
-    font-size: 35px;
-    border-radius: 15px;
-
-}
-
-#crimeDesc{
-    width: 100vw;
+.pages{
+    width: 100%;
     height: 100%;
-    background-color: darkcyan;
+    background-color: rgb(179, 55, 55);
 }
-.buttons{
-    width: 50%;
-    height:10%;
-    margin: 15px;
-    background-color: grey;
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    border-radius: 15px; 
-}
+/* STARTING PAGE */
+#startingPage{
+    display: flex;
+    flex-direction: column;   
+ }
+
+ #title{
+     display: flex;
+     justify-content: center;
+     height:20%;
+     width: 100%;
+ }
+
+ #title > p{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+ }
 
 
-.imgButtons{
-    width: 50%;
+#sherlockGif{
     height: 50%;
-    background-color: antiquewhite;
-    margin: 10px;
+    width: 100%;
 }
 
-#title1{
-    height: 20%;
-    width: 100vw;
+#options{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    width: 100px;
+    height: 30px;
+    background-color: grey;
     text-align: center;
-
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
 }
 
-.houses{
-  background-color: white;
-  width: 35%;
-  height: 15%;
-  margin: 10px;
+ /* TOWN PAGE */
+
+ #townPage{
+    display: none;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #town{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 50%;
+     background-color: green;
+ }
+
+ .house{
+    width: 20%;
+    height: 30%;
+    margin: 5px;
+    background-color: white;
+ }
+
 }
-
-#startHouses{
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-}
-
-/*                   */
-
-/*  Alex   ---------------               */
-
-
-/*                   */
-
-
-/*  Noah    -------------           */
-
-
-/*                   */
