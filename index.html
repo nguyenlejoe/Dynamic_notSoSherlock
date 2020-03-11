@@ -11,14 +11,14 @@
     <!--------------JOE------------------------------------->
     
     <div id="app">
-            <div id="test">
+            <div id="startingScreen">
                 
                 <div id="title">
                     <h1>Not So Sherlock</h1>
                 </div>
                 <div id="buttons">
-                    <div id="start" onclick="slide()">Start</a></div>
-                    <div id="tutorial" onclick="slide()">Tutorial</div>
+                    <div id="start" onclick="pageSlide('start', 'crimeHouse')">Start</a></div>
+                    <div id="tutorial" onclick="">Tutorial</div>
                 </div>
             </div>
 
@@ -26,11 +26,11 @@
                 <div class="menuItems">Music</div>
                 <div class="menuItems">Sound FX</div>
                 <div class="menuItems">Display</div>
-                <div class="menuItems" id="backHome" onclick="slideBackHome()">Back to home</div>
+                <div class="menuItems" id="backHome" onclick="">Back to home</div>
             </div>
             <div id="menuButton" onclick="hamButton()"></div>
 
-            <div id="crimeHouse">
+            <div id="crimeHouse" class="pages">
               <div id="startHouses">
                 <div class="houses" id="houseOne" onclick="checkHouse(1)">Henry</div>
                 <div class="houses" id="houseTwo" onclick="checkHouse(2)">Alex</div>
@@ -61,6 +61,7 @@
     <!------------------------------------------------------->
 
     <script src="app.js"></script>
+    <script src="./Joe_PageTransitions/transition.js"></script>
     <script src="carousel.js"></script>
   </body>
 </html>
