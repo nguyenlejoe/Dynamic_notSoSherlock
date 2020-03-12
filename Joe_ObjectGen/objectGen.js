@@ -10,32 +10,44 @@ var dayState = {
     culpritTrack : ["Henry", "Alex", "Noah", "Joe", "Aksel"]
 }
 
-
+//Alex Changes Below
 var officalCrimes = {
     inductiveCrimes:[
         {
+
+//Cookie Crime
             title:"Cookie Crime",
             clues:[
                 {
                    clueTitle : "Ladder",
-                   desc : "Test",
+                   desc : "I'm curious as to why is this ladder next to the counter!",
                 },
                 {
                     clueTitle : "Muddy Footprints",
-                    desc : "Test",
+                    desc : "It seems like the culprit left muddy footprints upon the floor!",
                  },
                  {
-                    clueTitle : "Hole in wall",
-                    desc : "Test",
-                 },
-                 
+                    clueTitle : "Empty Cookie Jar",
+                    desc : "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?",
+                 }, 
             ],
+//Choices
             choices: [
-                "Murder",
-                "Stolen Cookies",
-                "Stolen Game"
+                {
+                choice: "Murder",
+                 number: 3
+                },
+                {
+                choice: "Stolen Cookies",
+                number: 1
+                },
+                {
+                choice: "Stolen Game",
+                number: 2
+                },
             ],
         },
+//Stolen Toy
         {
             title:"Stolen Toys",
             clues:[
@@ -49,6 +61,7 @@ var officalCrimes = {
                 "Stolen Game"
             ]
         },
+//Stolen V-Bucks
         {
             title:"Stolen V-Bucks",
             clues:[
@@ -62,6 +75,7 @@ var officalCrimes = {
                 "Stolen Game"
             ]
         },
+//Stolen Candy
         {
             title:"Stolen Candy",
             clues:[
@@ -75,6 +89,7 @@ var officalCrimes = {
                 "Stolen Game"
             ]
         },
+//Broken Nerf Gun
         {
             title:"Broken Nerf gun",
             clues:[
