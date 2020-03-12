@@ -53,31 +53,31 @@ function addChoices(){
         case "Cookie Crime" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i]; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[0].clues[i];
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[0].clues[i].clueTitle;
             }
         break;
         case "Stolen Toys" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[1].choices[i]; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[1].clues[i];
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[1].clues[i].clueTitle;
             }
             break;
         case "Stolen V-Bucks" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[2].choices[i]; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[2].clues[i];
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[2].clues[i].clueTitle;
             }
             break;
         case "Stolen Candy" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[3].choices[i]; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[3].clues[i];
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[3].clues[i].clueTitle;
             }
             break;
         case "Broken Nerf gun" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[4].choices[i]; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[4].clues[i];
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[4].clues[i].clueTitle;
             }
             break;
           

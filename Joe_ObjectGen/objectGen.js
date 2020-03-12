@@ -16,9 +16,19 @@ var officalCrimes = {
         {
             title:"Cookie Crime",
             clues:[
-                "Ladder",
-                "FootPrints",
-                "Empty Cookie jar"   
+                {
+                   clueTitle : "Ladder",
+                   desc : "Test",
+                },
+                {
+                    clueTitle : "Muddy Footprints",
+                    desc : "Test",
+                 },
+                 {
+                    clueTitle : "Hole in wall",
+                    desc : "Test",
+                 },
+                 
             ],
             choices: [
                 "Murder",
@@ -152,4 +162,4 @@ gameGen();
 
 document.writeln("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house");
 
-
+console.log(officalCrimes.inductiveCrimes[0].clues[0]);
