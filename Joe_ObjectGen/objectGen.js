@@ -14,7 +14,7 @@ var dayState = {
 var officalCrimes = {
     inductiveCrimes:[
         {
-            title:"Cookie crime",
+            title:"Cookie Crime",
             clues:[
                 "Ladder",
                 "FootPrints",
@@ -27,7 +27,7 @@ var officalCrimes = {
             ],
         },
         {
-            title:"Stolen Game",
+            title:"Stolen Toys",
             clues:[
                 "Ladder",
                 "FootPrints",
@@ -40,7 +40,33 @@ var officalCrimes = {
             ]
         },
         {
-            title:"Murder",
+            title:"Stolen V-Bucks",
+            clues:[
+                "Ladder",
+                "FootPrints",
+                "Empty Cookie jar"   
+            ],
+            choices: [
+                "Murder",
+                "Stolen Cookies",
+                "Stolen Game"
+            ]
+        },
+        {
+            title:"Stolen Candy",
+            clues:[
+                "Ladder",
+                "FootPrints",
+                "Empty Cookie jar"   
+            ],
+            choices: [
+                "Murder",
+                "Stolen Cookies",
+                "Stolen Game"
+            ]
+        },
+        {
+            title:"Broken Nerf gun",
             clues:[
                 "Ladder",
                 "FootPrints",
@@ -125,4 +151,5 @@ function gameGen(){
 gameGen();
 
 document.writeln("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house");
+
 

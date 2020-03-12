@@ -45,22 +45,59 @@ var Clues =[
 
 
 function addChoices(){
-    document.querySelector("#buttonA").innerHTML =  Clues[0].multiChoice[0][0];
-    document.querySelector("#buttonB").innerHTML =  Clues[0].multiChoice[1][0];
-    document.querySelector("#buttonC").innerHTML =  Clues[0].multiChoice[2][0];
+    // document.querySelector("#buttonA").innerHTML =  Clues[0].multiChoice[0][0];
+    // document.querySelector("#buttonB").innerHTML =  Clues[0].multiChoice[1][0];
+    // document.querySelector("#buttonC").innerHTML =  Clues[0].multiChoice[2][0];
+
+    switch(mainCrime){
+        case "Cookie Crime" :
+            for(var i = 0; i <= 2; i++){
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i]; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[0].clues[i];
+            }
+        break;
+        case "Stolen Toys" :
+            for(var i = 0; i <= 2; i++){
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[1].choices[i]; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[1].clues[i];
+            }
+            break;
+        case "Stolen V-Bucks" :
+            for(var i = 0; i <= 2; i++){
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[2].choices[i]; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[2].clues[i];
+            }
+            break;
+        case "Stolen Candy" :
+            for(var i = 0; i <= 2; i++){
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[3].choices[i]; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[3].clues[i];
+            }
+            break;
+        case "Broken Nerf gun" :
+            for(var i = 0; i <= 2; i++){
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[4].choices[i]; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[4].clues[i];
+            }
+            break;
+          
+
+    }
+
+
 }
-addChoices();
+
 
 
 ///////////////////////////  ADDING CLUES  /////////////////////////
 
 
-function addClues(){
-    document.querySelector("#clue1").innerHTML = Clues[0].item;
-    document.querySelector("#clue2").innerHTML = Clues[1].item;
-    document.querySelector("#clue3").innerHTML = Clues[2].item;
-}
-addClues()
+// function addClues(){
+//     document.querySelector("#clue1").innerHTML = Clues[0].item;
+//     document.querySelector("#clue2").innerHTML = Clues[1].item;
+//     document.querySelector("#clue3").innerHTML = Clues[2].item;
+// }
+// addClues()
 
 ///////////////////////////  CLUE DETAIL DISPLAY  /////////////////////////
 
