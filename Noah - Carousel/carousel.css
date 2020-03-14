@@ -66,3 +66,15 @@ body {
   top: 75%;
   left: 15px;
 }
+
+.carousel__button--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#they_did_it {
+  position: absolute;
+  bottom: 15px;
+}
