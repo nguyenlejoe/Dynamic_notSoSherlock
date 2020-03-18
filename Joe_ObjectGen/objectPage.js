@@ -27,7 +27,7 @@ var officalCrimes = {
             //Choices
             choices: [
                 {
-                    choice: "Murder",
+                    choice: "Unfinished Assignment",
                     number: 3
                 },
                 {
@@ -42,136 +42,136 @@ var officalCrimes = {
         },
 
         {
-            //Stolen V-Bucks
-            title:"Stolen V-Bucks",
+            //Robbery
+            title:"Robbery",
             clues:[
                 {
-                    clueTitle : "Ladder",
-                    desc : "I'm curious as to why is this ladder next to the counter!",
+                    clueTitle : "Empty Wallet",
+                    desc : "Interesting… Why does a wallet meant for carrying money contain none at all?",
                 },
                 {
-                    clueTitle : "Muddy Footprints",
-                    desc : "It seems like the culprit left muddy footprints upon the floor!",
+                    clueTitle : "Lanyard Missing Keys",
+                    desc : "This lanyard is missing its heavy half? I don’t know about you, but I typically carry keys on my lanyard!",
                  },
                  {
-                    clueTitle : "Empty Cookie Jar",
-                    desc : "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?",
+                    clueTitle : "Empty Food Cans",
+                    desc : "Oh boy! I am starving, where did all of their food go?!",
                  }, 
             ],
             //Choices
             choices: [
                 {
-                    choice: "Murder",
+                    choice: "Robbery",
                     number: 3
                 },
                 {
-                    choice: "Stolen Cookies",
+                    choice: "Delusion",
                     number: 1
                 },
                 {
-                    choice: "Stolen Game",
+                    choice: "Borrowed items",
                     number: 2
                 },
             ]
         },
 
         {
-            //Stolen Toys
-            title:"Stolen Toys",
+            //I'm so sorry henry
+            title:"Unfinished Homework",
             clues:[
                 {
-                    clueTitle : "Ladder",
-                    desc : "I'm curious as to why is this ladder next to the counter!",
+                    clueTitle : "Homework",
+                    desc : "The top of the page says it was due yesterday and none of the questions were filled out.",
                 },
                 {
-                    clueTitle : "Muddy Footprints",
-                    desc : "It seems like the culprit left muddy footprints upon the floor!",
+                    clueTitle : "Puddle of Tears",
+                    desc : "It seems like someone was crying… a lot.",
                  },
                  {
-                    clueTitle : "Empty Cookie Jar",
-                    desc : "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?",
+                    clueTitle : "Half Eaten bag of Cheetos",
+                    desc : "It seems like whoever was here had a bad night.",
                  }, 
             ],
             //Choices
             choices: [
                 {
-                    choice: "Murder",
+                    choice: "Gluttony",
                     number: 3
                 },
                 {
-                    choice: "Stolen Cookies",
+                    choice: "Wastefulness",
+                    number: 2
+                },
+                {
+                    choice: "Unfinished Assignment",
+                    number: 1
+                },
+            ]
+        },
+
+        {
+            //Bullying
+            title:"Bullying",
+            clues:[
+                {
+                    clueTitle : "Messages",
+                    desc : "Those are not a kind things to say to someone...",
+                },
+                {
+                    clueTitle : "T-Shirt",
+                    desc : "That’s a rather unpleasant piece of attire.",
+                 },
+                 {
+                    clueTitle : "Skateboard",
+                    desc : "Oh my… Never before have I ever seen a two-piece skateboard.",
+                 }, 
+            ],
+            //Choices
+            choices: [
+                {
+                    choice: "Earthquake",
+                    number: 3
+                },
+                {
+                    choice: "Bullying",
                     number: 1
                 },
                 {
-                    choice: "Stolen Game",
+                    choice: "Prank",
                     number: 2
                 },
             ]
         },
 
         {
-            //Stolen Candy
-            title:"Stolen Candy",
+            //Fraud
+            title:"Fraud",
             clues:[
                 {
-                    clueTitle : "Ladder",
-                    desc : "I'm curious as to why is this ladder next to the counter!",
+                    clueTitle : "Credit Card",
+                    desc : "This credit card has a suspicious sounding name on it… Have you ever met a person named Peculiar Prawn?",
                 },
                 {
-                    clueTitle : "Muddy Footprints",
-                    desc : "It seems like the culprit left muddy footprints upon the floor!",
+                    clueTitle : "Bags filled with diamonds",
+                    desc : "What sane person would buy a bag filled with diamonds?",
                  },
                  {
-                    clueTitle : "Empty Cookie Jar",
-                    desc : "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?",
+                    clueTitle : "Two Passports",
+                    desc : "Why would anyone have two passports in two different names!",
                  }, 
             ],
             //Choices
             choices: [
                 {
-                    choice: "Murder",
-                    number: 3
-                },
-                {
-                    choice: "Stolen Cookies",
+                    choice: "Fraud",
                     number: 1
                 },
                 {
-                    choice: "Stolen Game",
-                    number: 2
-                },
-            ]
-        },
-
-        {
-            //Broken Nerf gun
-            title:"Broken Nerf gun",
-            clues:[
-                {
-                    clueTitle : "Ladder",
-                    desc : "I'm curious as to why is this ladder next to the counter!",
-                },
-                {
-                    clueTitle : "Muddy Footprints",
-                    desc : "It seems like the culprit left muddy footprints upon the floor!",
-                 },
-                 {
-                    clueTitle : "Empty Cookie Jar",
-                    desc : "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?",
-                 }, 
-            ],
-            //Choices
-            choices: [
-                {
-                    choice: "Murder",
+                    choice: "Acting",
                     number: 3
                 },
                 {
-                    choice: "Stolen Cookies",
-                    number: 1
-                },
-                {
-                    choice: "Stolen Game",
+                    choice: "Multiple Personality Disorder",
                     number: 2
                 },
             ]
