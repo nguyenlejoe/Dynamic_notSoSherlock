@@ -39,3 +39,6 @@ function gameGen() {
 }
 
 gameGen();
+
+document.writeln("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house");
+
