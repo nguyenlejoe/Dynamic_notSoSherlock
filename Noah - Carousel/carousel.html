@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not So Sherlock</title>
-    <link rel="stylesheet" href="/app.css">
-    <link rel="stylesheet" href="/button.css">
-    <link rel="stylesheet" href="/carousel.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="carousel.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="carousel">
-        <div class="carousel__container">
-          <div class="carousel__container--avatar"></div>
-          <div class="carousel__container--textbox"></div>
-          <div class="button--arrow"></div>
-          <div class="button--arrow"></div>
-          <div class="carousel__textbox">
-              <div class="carousel__textbox--heading">Info</div>
-              <div class="carousel__textbox--description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eius vel in, fuga sequi animi architecto? Placeat, autem natus, sapiente odit modi officia eveniet tempora aut earum vel enim eligendi!
-              </div>
+      <div class="slide current">
+        <div class="content">
+          <h1 class="content__crim--name" onclick="test()">Criminal</h1>
+          <div id="content__crim--age">
+            <h3>Traits</h3>
           </div>
-          <div class="button">It was him!</div>
+          <p class="content__crim--bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            quasi temporibus voluptatibus voluptate laudantium eaque neque
+            officiis eos ut, in veniam deleniti ad itaque! Voluptatem fugit id
+            soluta temporibus minus!
+          </p>
         </div>
       </div>
-    <script src="/carousel.js"></script>
-</body>
+      <div class="carousel__button--container">
+        <div class="carsousel__button--center">
+          <button id="they_did_it">They did it!</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel__button">
+      <button id="prev">
+        <i class="material-icons">
+          arrow_back
+        </i>
+      </button>
+      <button id="next" onclick="next_slide()">
+        <i class="material-icons">
+          arrow_forward
+        </i>
+      </button>
+    </div>
+    <script src="carousel.js"></script>
+  </body>
 </html>
