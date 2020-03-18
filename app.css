@@ -82,4 +82,27 @@ body{
     background-color: white;
  }
 
+ /* Gathering People  */
+
+ #gatherPeople{
+     display: none;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ /* Win or Lose screen  */
+
+ #nextNightWin{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+#nextNightLose{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
 }

@@ -50,40 +50,38 @@ function addChoices(){
     // document.querySelector("#buttonC").innerHTML =  Clues[0].multiChoice[2][0];
 
     switch(mainCrime){
-        case "Cookie Crime" :
+        case "Stolen Cookies" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[0].clues[i].clueTitle;
             }
         break;
-        case "Stolen Toys" :
+        case "Robbery" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[1].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[1].clues[i].clueTitle;
             }
             break;
-        case "Stolen V-Bucks" :
+        case "Unfinished Homework" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[2].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[2].clues[i].clueTitle;
             }
             break;
-        case "Stolen Candy" :
+        case "Bullying" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[3].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[3].clues[i].clueTitle;
             }
             break;
-        case "Broken Nerf gun" :
+        case "Fraud" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[4].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[4].clues[i].clueTitle;
             }
             break;
           
-
     }
-
 
 }
 
@@ -101,18 +99,20 @@ function addChoices(){
 
 ///////////////////////////  CLUE DETAIL DISPLAY  /////////////////////////
 
-function displayClue1(){
-    alert(Clues[0].description);
-}
+function displayClue(cluenum){
 
-function displayClue2(){
-    alert(Clues[1].description);
+    switch(cluenum){
+        case 1: 
+        alert(officalCrimes.inductiveCrimes[crimeNum].clues[0].desc);
+        break;
+        case 2: 
+        alert(officalCrimes.inductiveCrimes[crimeNum].clues[1].desc);
+        break;
+        case 3: 
+        alert(officalCrimes.inductiveCrimes[crimeNum].clues[2].desc);
+        break;
+    }
 }
-
-function displayClue3(){
-    alert(Clues[2].description);
-}
-
 
 
 ///////////////////////////  CHECK ANSWER    /////////////////////////
@@ -131,33 +131,44 @@ switch(evidence){
 }
 */
 
-var A = Clues[0].multiChoice[0][1];
-var B = Clues[0].multiChoice[1][1];
-var C = Clues[0].multiChoice[2][1];
+var A = officalCrimes.inductiveCrimes[crimeNum].choices[0].number;
+var B = officalCrimes.inductiveCrimes[crimeNum].choices[1].number;
+var C = officalCrimes.inductiveCrimes[crimeNum].choices[2].number;
 
 function answerA(){
     if (A == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
+                appOverFlow = false;
                 alert("You are truly A genius Mr.Holmes!");
+                pageSlide('clueStage','gatherPeople' );
             } else {
                 alert("Hmmmmm it seems you haven't grasped it yet Mr. Holmes, Inductive thinking is...");
             }
+            
     }
+        else if (A == 2){
+        alert("You are incorrect Mr.Holmes!");
+    }
+        if (A == 3){
+        alert("You are incorrect Mr.Holmes!");
+}
 }
 
 function answerB(){
     if (B == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
+                appOverFlow = false;
                 alert("You are truly A genius Mr.Holmes!");
+                pageSlide('clueStage','gatherPeople' );
             } else {
                 alert("Hmmmmm it seems you haven't grasped it yet Mr. Holmes, Inductive thinking is...");
             }
     } else if (B == 2){
         alert("You are incorrect Mr.Holmes!");
             }
-    if (B == 1){
+    if (B == 3){
         alert("You are incorrect Mr.Holmes!");
     }
 }
@@ -166,7 +177,9 @@ function answerC(){
     if (C == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
+                appOverFlow = false;
                 alert("You are truly A genius Mr.Holmes!");
+                pageSlide('clueStage','gatherPeople' );
             } else {
                 alert("Hmmmmm it seems you haven't grasped it yet Mr. Holmes, Inductive thinking is...");
             }
@@ -177,4 +190,3 @@ function answerC(){
         alert("You are incorrect Mr.Holmes!");
     }
 }
-

@@ -1,10 +1,10 @@
 var dayState = {
   crimeTrack: [
-    "Cookie Crime",
-    "Stolen V-Bucks",
-    "Stolen Toys",
-    "Stolen Candy",
-    "Broken Nerf gun"
+    "Stolen Cookies",
+    "Robbery",
+    "Unfinished Homework",
+    "Bullying",
+    "Fraud"
   ],
   houseTrack: ["Henry", "Alex", "Noah", "Joe", "Aksel"],
   culpritTrack: ["Henry", "Alex", "Noah", "Joe", "Aksel"]
@@ -15,7 +15,7 @@ var officalCrimes = {
     inductiveCrimes:[
             {
             //Cookie Crime
-            title:"Cookie Crime",
+            title:"Stolen Cookies",
             clues:[
                 {
                     clueTitle : "Ladder",
@@ -44,7 +44,11 @@ var officalCrimes = {
                     choice: "Stolen Game",
                     number: 2
                 },
-            ]
+            ],
+
+            Keytrait: "Muddy footprints",
+
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -68,17 +72,21 @@ var officalCrimes = {
             choices: [
                 {
                     choice: "Robbery",
-                    number: 3
+                    number: 1
                 },
                 {
                     choice: "Delusion",
-                    number: 1
+                    number: 3
                 },
                 {
                     choice: "Borrowed items",
                     number: 2
                 },
-            ]
+            ],
+
+            Keytrait: "Muddy footprints",
+
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -112,7 +120,11 @@ var officalCrimes = {
                     choice: "Unfinished Assignment",
                     number: 1
                 },
-            ]
+            ],
+
+            Keytrait: "Muddy footprints",
+
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -146,7 +158,11 @@ var officalCrimes = {
                     choice: "Prank",
                     number: 2
                 },
-            ]
+            ],
+
+            Keytrait: "Muddy footprints",
+
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -180,214 +196,15 @@ var officalCrimes = {
                     choice: "Multiple Personality Disorder",
                     number: 2
                 },
-            ]
+            ],
+
+            Keytrait: "Muddy footprints",
+
+            Keydesc: "Lorem Ipsum"
         },
     ]
 
     
-}
-
-  inductiveCrimes: [
-    {
-      //Cookie Crime
-      title: "Cookie Crime",
-      clues: [
-        {
-          clueTitle: "Ladder",
-          desc: "I'm curious as to why is this ladder next to the counter!"
-        },
-        {
-          clueTitle: "Muddy Footprints",
-          desc:
-            "It seems like the culprit left muddy footprints upon the floor!"
-        },
-        {
-          clueTitle: "Empty Cookie Jar",
-          desc:
-            "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?"
-        }
-      ],
-      //Choices
-      choices: [
-        {
-          choice: "Murder",
-          number: 3
-        },
-        {
-          choice: "Stolen Cookies",
-          number: 1
-        },
-        {
-          choice: "Stolen Game",
-          number: 2
-        }
-      ],
-
-
-      Keytrait: "Muddy footprints",
-
-      Keydesc: "Lorem Ipsum"
-    },
-
-    {
-      //Stolen V-Bucks
-      title: "Stolen V-Bucks",
-      clues: [
-        {
-          clueTitle: "Ladder",
-          desc: "I'm curious as to why is this ladder next to the counter!"
-        },
-        {
-          clueTitle: "Muddy Footprints",
-          desc:
-            "It seems like the culprit left muddy footprints upon the floor!"
-        },
-        {
-          clueTitle: "Empty Cookie Jar",
-          desc:
-            "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?"
-        }
-      ],
-      //Choices
-      choices: [
-        {
-          choice: "Murder",
-          number: 3
-        },
-        {
-          choice: "Stolen Cookies",
-          number: 1
-        },
-        {
-          choice: "Stolen Game",
-          number: 2
-        }
-      ],
-      Keytrait: "Muddy footprints",
-
-      Keydesc: "Lorem Ipsum"
-    },
-
-    {
-      //Stolen Toys
-      title: "Stolen Toys",
-      clues: [
-        {
-          clueTitle: "Ladder",
-          desc: "I'm curious as to why is this ladder next to the counter!"
-        },
-        {
-          clueTitle: "Muddy Footprints",
-          desc:
-            "It seems like the culprit left muddy footprints upon the floor!"
-        },
-        {
-          clueTitle: "Empty Cookie Jar",
-          desc:
-            "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?"
-        }
-      ],
-      //Choices
-      choices: [
-        {
-          choice: "Murder",
-          number: 3
-        },
-        {
-          choice: "Stolen Cookies",
-          number: 1
-        },
-        {
-          choice: "Stolen Game",
-          number: 2
-        }
-      ],
-
-      Keytrait: "Muddy footprints",
-
-      Keydesc: "Lorem Ipsum"
-    },
-
-    {
-      //Stolen Candy
-      title: "Stolen Candy",
-      clues: [
-        {
-          clueTitle: "Ladder",
-          desc: "I'm curious as to why is this ladder next to the counter!"
-        },
-        {
-          clueTitle: "Muddy Footprints",
-          desc:
-            "It seems like the culprit left muddy footprints upon the floor!"
-        },
-        {
-          clueTitle: "Empty Cookie Jar",
-          desc:
-            "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?"
-        }
-      ],
-      //Choices
-      choices: [
-        {
-          choice: "Murder",
-          number: 3
-        },
-        {
-          choice: "Stolen Cookies",
-          number: 1
-        },
-        {
-          choice: "Stolen Game",
-          number: 2
-        }
-      ],
-
-      Keytrait: "Muddy footprints",
-
-      Keydesc: "Lorem Ipsum"
-    },
-
-    {
-      //Broken Nerf gun
-      title: "Broken Nerf gun",
-      clues: [
-        {
-          clueTitle: "Ladder",
-          desc: "I'm curious as to why is this ladder next to the counter!"
-        },
-        {
-          clueTitle: "Muddy Footprints",
-          desc:
-            "It seems like the culprit left muddy footprints upon the floor!"
-        },
-        {
-          clueTitle: "Empty Cookie Jar",
-          desc:
-            "Hmmm intriguing, this cookie jar seems rather empty I wonder where all the cookies went?"
-        }
-      ],
-      //Choices
-      choices: [
-        {
-          choice: "Murder",
-          number: 3
-        },
-        {
-          choice: "Stolen Cookies",
-          number: 1
-        },
-        {
-          choice: "Stolen Game",
-          number: 2
-        }
-      ],
-
-      Keytrait: "Muddy footprints",
-
-      Keydesc: "Lorem Ipsum"
-    }
-  ]
 };
 
 var townsPeople = {

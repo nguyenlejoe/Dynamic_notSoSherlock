@@ -46,20 +46,29 @@
         </div>
       </div>
 
-      <!-- ALEX
+    <!-- ALEX -->
 
             <div id="clueStage" class="pages">
                 <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
                 <div id="crimeScene">
-                    <div class="evidence" id="clue0" onclick="displayClue1()"></div>
-                    <div class="evidence" id="clue1" onclick="displayClue2()"></div>
-                    <div class="evidence" id="clue2" onclick="displayClue3()"></div>
+                    <div class="evidence" id="clue0" onclick="displayClue(1)"></div>
+                    <div class="evidence" id="clue1" onclick="displayClue(2)"></div>
+                    <div class="evidence" id="clue2" onclick="displayClue(3)"></div>
                 </div>
                 <div id="multiChoice">
                     <button onclick="answerA()" class="InductiveChoice" name="1" id="button0">1</button>
                     <button onclick="answerB()" class="InductiveChoice" name="2" id="button1">2</button>
                     <button onclick="answerC()" class="InductiveChoice" name="3" id="button2">3</button>
-            </div>  -->
+                 </div> 
+            </div> 
+
+
+            <div id="gatherPeople" class="pages">
+              lets gather the towns people and see who the culprit is!
+
+              <button onclick="pageSlide('gatherPeople','carousel')">Next</button>
+
+            </div>
 
       <!-- NOAH -->
       <div id="carousel" class="pages">
@@ -84,23 +93,35 @@
             </button>
           </div>
         </div>
+        <div class="carousel__button">
+          <button id="prev" onclick="last_slide()">
+            <i class="material-icons">
+              arrow_back
+            </i>
+          </button>
+          <button id="next" onclick="next_slide()">
+            <i class="material-icons">
+              arrow_forward
+            </i>
+          </button>
       </div>
-      <div class="carousel__button">
-        <button id="prev" onclick="last_slide()">
-          <i class="material-icons">
-            arrow_back
-          </i>
-        </button>
-        <button id="next" onclick="next_slide()">
-          <i class="material-icons">
-            arrow_forward
-          </i>
-        </button>
+      </div>
+      <div id="nextNightLose" class="pages">
+        The next night, someone has reported another crime! Lets try to find the culprit again
+
+        <button onclick="pageSlide('nextNightLose','townPage')">Next</button>
+
+      </div>
+      <div id="nextNightWin" class="pages">
+        The next night, no one has reported a crime! You win!
+
+        <button onclick="pageSlide('nextNightWin','townPage')">Next</button>
+
       </div>
     </div>
     <script src="./Joe_ObjectGen/objectPage.js"></script>
-    <script src="./Alex Inductive Thinking/MultiChoice.js"></script>
     <script src="./Joe_ObjectGen/objectGen.js"></script>
+    <script src="./Alex Inductive Thinking/MultiChoice.js"></script>
     <script src="./Joe_CrimeHouseCheck/crimeHouse.js"></script>
     <script src="app.js"></script>
     <script src="./Joe_PageTransitions/transition.js"></script>

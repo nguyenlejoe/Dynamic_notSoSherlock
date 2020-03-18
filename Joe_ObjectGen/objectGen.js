@@ -2,13 +2,17 @@ var mainCulprit;
 var mainCrime;
 var mainHouse;
 var firstNight = true;
+var culpritNum;
+var crimeNum;
+var houseNum;
+
 
 function gameGen() {
   if (firstNight === true) {
     //Random Generation of number between 0-2 for each object
-    var culpritNum = Math.floor(Math.random() * dayState.culpritTrack.length);
-    var crimeNum = Math.floor(Math.random() * dayState.crimeTrack.length);
-    var houseNum = Math.floor(Math.random() * dayState.houseTrack.length);
+    culpritNum = Math.floor(Math.random() * dayState.culpritTrack.length);
+    crimeNum = Math.floor(Math.random() * dayState.crimeTrack.length);
+    houseNum = Math.floor(Math.random() * dayState.houseTrack.length);
 
     //Grabbing properties from object depending on the number
     mainCulprit = dayState.culpritTrack[culpritNum];
@@ -17,16 +21,9 @@ function gameGen() {
 
     firstNight = false;
 
-    console.log(
-      "culprit is " +
-        mainCulprit +
-        " and the crime is " +
-        mainCrime +
-        " is in " +
-        mainHouse +
-        " house"
-    );
-  } else {
+    console.log(  "culprit is " +  mainCulprit +   " and the crime is " +   mainCrime +   " is in " +    mainHouse +    " house"   );
+  } 
+  else {
     crimeNum = Math.floor(Math.random() * dayState.crimeTrack.length);
     houseNum = Math.floor(Math.random() * dayState.houseTrack.length);
 
@@ -35,10 +32,12 @@ function gameGen() {
 
     dayState.crimeTrack.splice(crimeNum, 1);
     dayState.houseTrack.splice(houseNum, 1);
+
+    console.log(  "culprit is " +  mainCulprit +   " and the crime is " +   mainCrime +   " is in " +    mainHouse +    " house"   );
   }
 }
 
 gameGen();
 
-document.writeln("culprit is " + mainCulprit + " and the crime is " + mainCrime + " is in " + mainHouse + " house");
+
 
