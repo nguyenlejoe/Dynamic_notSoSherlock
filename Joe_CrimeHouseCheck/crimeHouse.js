@@ -4,8 +4,8 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Henry") {
         appOverFlow = true;
         alert("The crime has been found!");
-        pageSlide("townPage", "carousel");
-        // addChoices();
+        pageSlide("townPage", "clueStage");
+        addChoices();
       } else {
         alert("seems to be nothing here");
       }
@@ -15,8 +15,8 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Alex") {
         appOverFlow = true;
         alert("The crime has been found!");
-        pageSlide("townPage", "carousel");
-        // addChoices();
+        pageSlide("townPage", "clueStage");
+        addChoices();
       } else {
         alert("seems to be nothing here");
       }
@@ -26,8 +26,8 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Noah") {
         appOverFlow = true;
         alert("The crime has been found!");
-        pageSlide("townPage", "carousel");
-        // addChoices();
+        pageSlide("townPage", "clueStage");
+        addChoices();
       } else {
         alert("seems to be nothing here");
       }
@@ -37,8 +37,8 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Joe") {
         appOverFlow = true;
         alert("The crime has been found!");
-        pageSlide("townPage", "carousel");
-        // addChoices();
+        pageSlide("townPage", "clueStage");
+        addChoices();
       } else {
         alert("seems to be nothing here");
       }
@@ -48,8 +48,8 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Aksel") {
         appOverFlow = true;
         alert("The crime has been found!");
-        pageSlide("townPage", "carousel");
-        // addChoices();
+        pageSlide("townPage", "clueStage");
+        addChoices();
       } else {
         alert("seems to be nothing here");
       }

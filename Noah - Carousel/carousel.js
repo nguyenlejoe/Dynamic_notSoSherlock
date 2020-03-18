@@ -54,34 +54,28 @@ function test() {
 
 var slideCounter = 0;
 
+
+
 function startCarousel() {
-  document.querySelector("h1").innerHTML =
-    townsPeople.people[slideCounter].name;
-  document.querySelector("h3").innerHTML =
-    townsPeople.people[slideCounter].trait;
-  document.querySelector(".content__crim--bio").innerHTML =
-    townsPeople.people[slideCounter].desc;
+  townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[culpritNum].Keytrait;
+  document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
+  document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
+  document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
   console.log(slideCounter);
 }
 
 function next_slide() {
   if (slideCounter <= 3) {
     slideCounter++;
-    document.querySelector("h1").innerHTML =
-      townsPeople.people[slideCounter].name;
-    document.querySelector("h3").innerHTML =
-      townsPeople.people[slideCounter].trait;
-    document.querySelector(".content__crim--bio").innerHTML =
-      townsPeople.people[slideCounter].desc;
+    document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
+    document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
+    document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
     console.log(slideCounter);
   } else {
     slideCounter = 0;
-    document.querySelector("h1").innerHTML =
-      townsPeople.people[slideCounter].name;
-    document.querySelector("h3").innerHTML =
-      townsPeople.people[slideCounter].trait;
-    document.querySelector(".content__crim--bio").innerHTML =
-      townsPeople.people[slideCounter].desc;
+    document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
+    document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
+    document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
     console.log(slideCounter);
   }
 }
@@ -89,25 +83,18 @@ function next_slide() {
 // document.querySelector(".slide").innerHTML = crim.image + 1;
 
 function last_slide() {
-  if (slideCounter >= 0) {
+  if (slideCounter > 0) {
     slideCounter--;
-    document.querySelector("h1").innerHTML =
-      townsPeople.people[slideCounter].name;
-    document.querySelector("h3").innerHTML =
-      townsPeople.people[slideCounter].trait;
-    document.querySelector(".content__crim--bio").innerHTML =
-      townsPeople.people[slideCounter].desc;
+    document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
+    document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
+    document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
 
     console.log(slideCounter);
   } else if (slideCounter <= 0) {
     slideCounter = 4;
-    document.querySelector("h1").innerHTML =
-      townsPeople.people[slideCounter].name;
-    document.querySelector("h3").innerHTML =
-      townsPeople.people[slideCounter].trait;
-    document.querySelector(".content__crim--bio").innerHTML =
-      townsPeople.people[slideCounter].desc;
-    slideCounter--;
+    document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
+    document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
+    document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
     console.log(slideCounter);
   }
 }
@@ -115,18 +102,18 @@ function last_slide() {
 function check_culprit() {
   if (mainCulprit === townsPeople.people[slideCounter].name) {
     alert("Right!");
+    pageSlide('carousel','nextNightWin');
   } else {
     alert("wrong!");
+    gameGen();
+    pageSlide('carousel','nextNightLose');
   }
 }
-
-var carouselArray = [];
-
-function replaceTrait(){
-  var index = 
-}
+  
 
 startCarousel();
+
+
 
 console.log(townsPeople.people[0].trait);
 
