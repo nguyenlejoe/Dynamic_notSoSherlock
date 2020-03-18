@@ -1,3 +1,6 @@
+var hamStatus = false;
+
+
 function hamButton(){
     if(hamStatus === false){
         document.querySelector("#menuPopup").style.left = "0";

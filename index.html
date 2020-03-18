@@ -14,8 +14,14 @@
   <body>
     <div id="app">
       <!-- JOE -->
-
+      <div id="menuPopup">
+        <div class="menuItems">Music</div>
+        <div class="menuItems">Sound FX</div>
+        <div class="menuItems">Display</div>
+        <div class="menuItems" onclick="pageSlide('townPage', 'startingPage')">Back to home</a></div>
+    </div>
       <!-- STARTING PAGE -->
+      <div id="menuButton" onclick="hamButton()"></div>
       <div id="startingPage" class="pages">
         <div id="title">
           <p>NOT SO SHERLOCK</p>
@@ -115,7 +121,7 @@
       <div id="nextNightWin" class="pages">
         The next night, no one has reported a crime! You win!
 
-        <button onclick="pageSlide('nextNightWin','townPage')">Next</button>
+        <button onclick="pageSlide('nextNightWin','startingPage')">Next</button>
 
       </div>
     </div>
