@@ -1,4 +1,4 @@
-.button {
+/* .button {
   display: flex;
   background-color: royalblue;
   align-items: center;
@@ -7,4 +7,7 @@
   width: 200px;
   height: 50px;
   border-radius: 15px;
-}
+} */
+
+/* don't use this
+use the buttons in app.css */
