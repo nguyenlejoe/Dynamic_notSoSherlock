@@ -152,22 +152,20 @@ body {
   flex-direction: column;
 }
 
-  /* Win or Lose screen  */
+/* Win or Lose screen  */
 
-  #nextNightWin {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #nextNightLose {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+#nextNightWin {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
+#nextNightLose {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 /* For Phone */
 @media screen and (min-width: 375px) and (max-width: 812px) {
