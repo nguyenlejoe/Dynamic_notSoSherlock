@@ -1,5 +1,8 @@
+//Variable set to prevent pages from scrolling if not needed
 var appOverFlow = false;
 
+//Universal page transition
+//Takes "current" page and turns display off and "next page" on
 function pageSlide(current, next){
     if(appOverFlow = false){
         document.querySelector("#" + next).style.display = "flex";

@@ -1,3 +1,5 @@
+//Object to keep track of the days (turns)
+//mainly used to prevent repeats of house and culprits for each turn
 var dayState = {
   crimeTrack: [
     "Stolen Cookies",
@@ -10,6 +12,7 @@ var dayState = {
   culpritTrack: ["Henry", "Alex", "Noah", "Joe", "Aksel"]
 };
 
+//Offical object that stores most of the data
 var officalCrimes = {
   
     inductiveCrimes:[

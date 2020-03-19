@@ -1,3 +1,5 @@
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB NOAH :)
+
 function Criminal(name, age, bio, image, num) {
   this.name = name;
   this.traits = age;
@@ -46,24 +48,31 @@ var crim5 = new Criminal(
   4
 );
 
-function test() {
-  document.querySelector("h1").innerHTML = crim1.name;
-  crim1.printName;
-}
-// ^Click on "Criminal" it will change to crim1's name^
-
+//Array to keep track of checked culprits that the user has chosen in previous nights
+var checkedCulprit = [];
+//Slide counter and CurrentCrim variable to help keep track on which person is being viewed currently
 var slideCounter = 0;
+var currentCrim;
+
+//Firstcheck and nightCounter to prevent buttons from being disabled
+var firstCheck = true;
+var nightCounter = 0;
 
 
-
+//Function to reset carousel to original position
 function startCarousel() {
+  slideCounter = 0;
   townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[culpritNum].Keytrait;
   document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
   document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
   document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
   console.log(slideCounter);
+  document.querySelector("#they_did_it").disabled = false;
+  currentCrim = testCheck1(slideCounter);
+  checkRecycle();
 }
 
+//Switches to next person in list
 function next_slide() {
   if (slideCounter <= 3) {
     slideCounter++;
@@ -78,9 +87,12 @@ function next_slide() {
     document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
     console.log(slideCounter);
   }
+  document.querySelector("#they_did_it").disabled = false;
+  currentCrim = testCheck1(slideCounter);
+  checkRecycle();
 }
 
-// document.querySelector(".slide").innerHTML = crim.image + 1;
+
 
 function last_slide() {
   if (slideCounter > 0) {
@@ -97,24 +109,71 @@ function last_slide() {
     document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
     console.log(slideCounter);
   }
+  document.querySelector("#they_did_it").innerHTML = "They did it!";
+  document.querySelector("#they_did_it").disabled = false;
+  currentCrim = testCheck1(slideCounter);
+  checkRecycle();
 }
 
+//Function to check if user has picked the right culprit
 function check_culprit() {
+  //Main variable compared to the one chosen by user
   if (mainCulprit === townsPeople.people[slideCounter].name) {
     alert("Right!");
+    //User is correct and will be directed to win screen
     pageSlide('carousel','nextNightWin');
-  } else {
-    alert("wrong!");
-    gameGen();
-    pageSlide('carousel','nextNightLose');
+  } 
+  else{
+    //User is wrong and will be directed back to lose screen
+      alert("wrong!");
+      nightCounter++;
+      //gameGen will run so the next night will continue
+      gameGen();
+      pageSlide('carousel','nextNightLose');
+      //Adds chosen culprit to array
+      checkedCulprit.push(townsPeople.people[slideCounter].name);
   }
 }
   
 
-startCarousel();
+//Checks current viewed culprit
+function testCheck1(slideCounter){
+  switch(slideCounter){
+    case 0:
+      return("Henry");
+    case 1:
+      return("Alex");
+    case 2:
+      return("Noah");
+    case 3:
+      return("Joe");
+    case 4:
+      return("Aksel");
+  }
+}
+
+//Function used after the first night
+//Checks if users have chosen the culprit in the previous night and disables button
+function checkRecycle(){
+
+  if (firstCheck === false){
+    for(var c = 0; c <= checkedCulprit.length; c++){
+      if(currentCrim === checkedCulprit[c]){
+        document.querySelector("#they_did_it").disabled = true;
+      }
+    else{
+        break;
+      }
+    }
+}
+  else{
+    if(nightCounter >= 1){
+      firstCheck = false;
+  }
+}
+
+
+}
 
 
 
-console.log(townsPeople.people[0].trait);
-
-// if this,um == 4
