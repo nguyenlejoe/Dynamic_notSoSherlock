@@ -1,6 +1,5 @@
 
 
-
 //UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
 ///////////////////////////  OBJECTS  /////////////////////////
 var Clues =[ 
@@ -59,32 +58,32 @@ function addChoices(){
             //For loop to grab each item in array for both choices and clues
             //Changes innerHTML for button and clues
             for(var i = 0; i <= 2; i++){
-                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[0].clues[i].clueTitle;
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[crimeNum].choices[i].choice; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[crimeNum].clues[i].clueTitle;
             }
         break;
         case "Robbery" :
             for(var i = 0; i <= 2; i++){
-                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[1].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[1].clues[i].clueTitle;
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[crimeNum].choices[i].choice; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[crimeNum].clues[i].clueTitle;
             }
             break;
         case "Unfinished Homework" :
             for(var i = 0; i <= 2; i++){
-                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[2].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[2].clues[i].clueTitle;
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[crimeNum].choices[i].choice; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[crimeNum].clues[i].clueTitle;
             }
             break;
         case "Bullying" :
             for(var i = 0; i <= 2; i++){
-                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[3].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[3].clues[i].clueTitle;
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[crimeNum].choices[i].choice; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[crimeNum].clues[i].clueTitle;
             }
             break;
         case "Fraud" :
             for(var i = 0; i <= 2; i++){
-                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[4].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[4].clues[i].clueTitle;
+                document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[crimeNum].choices[i].choice; 
+                document.querySelector("#clue"+i).innerHTML = officalCrimes.inductiveCrimes[crimeNum].clues[i].clueTitle;
             }
             break;
           

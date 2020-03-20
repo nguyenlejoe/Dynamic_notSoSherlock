@@ -61,15 +61,15 @@ var nightCounter = 0;
 
 //Function to reset carousel to original position
 function startCarousel() {
+  document.querySelector("#they_did_it").disabled = false;
+  currentCrim = testCheck1(slideCounter);
+  checkRecycle();
   slideCounter = 0;
-  townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[culpritNum].Keytrait;
+  townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[crimeNum].Keytrait;
   document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
   document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
   document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
   console.log(slideCounter);
-  document.querySelector("#they_did_it").disabled = false;
-  currentCrim = testCheck1(slideCounter);
-  checkRecycle();
 }
 
 //Switches to next person in list
@@ -128,6 +128,7 @@ function check_culprit() {
       alert("wrong!");
       nightCounter++;
       //gameGen will run so the next night will continue
+      removeObject();
       gameGen();
       pageSlide('carousel','nextNightLose');
       //Adds chosen culprit to array
@@ -161,13 +162,10 @@ function checkRecycle(){
       if(currentCrim === checkedCulprit[c]){
         document.querySelector("#they_did_it").disabled = true;
       }
-    else{
-        break;
-      }
     }
 }
   else{
-    if(nightCounter >= 1){
+    if(nightCounter >= 0){
       firstCheck = false;
   }
 }
