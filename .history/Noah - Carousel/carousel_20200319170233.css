@@ -26,7 +26,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: none;
+  background: url("http://placekitten.com/500/500") no-repeat center
+    center/cover;
 }
 
 .slide .content {

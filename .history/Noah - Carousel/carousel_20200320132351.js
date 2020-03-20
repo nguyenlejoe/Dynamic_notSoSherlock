@@ -61,7 +61,7 @@ function startCarousel() {
   document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
   document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
   document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
-  document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
+  document.querySelector("#slide current").body.style.background = townsPeople.people[slideCounter].imgFile;
   console.log(slideCounter);
 }
 
@@ -71,14 +71,14 @@ function next_slide() {
     document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
     document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
     document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
-    document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
+    document.querySelector("#slide current").body.style.background = townsPeople.people[slideCounter].imgFile;
     console.log(slideCounter);
   } else {
     slideCounter = 0;
     document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
     document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
     document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
-    document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
+    document.querySelector("#slide current").body.style.background = townsPeople.people[slideCounter].imgFile;
     console.log(slideCounter);
   }
 }
@@ -91,7 +91,7 @@ function last_slide() {
     document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
     document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
     document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
-    document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
+    document.querySelector("#slide current").body.style.background = townsPeople.people[slideCounter].imgFile;
 
     console.log(slideCounter);
   } else if (slideCounter <= 0) {

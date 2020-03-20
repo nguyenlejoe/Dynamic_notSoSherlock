@@ -229,31 +229,31 @@ var townsPeople = {
       name: "Angela Anger",
       desc: "Muddy Footprints",
       trait: "She seems to get angry quickly",
-      imgFile: "url('/Assets/suspects/Characters_Angela Anger.svg') no-repeat center center/cover"
+      imgFile: "url ('/Assets/suspects/Characters_Angela Anger.svg')"
     },
     {
       name: "Billy Bad",
       desc: "Muddy Footprints",
       trait: "His eyes seem shifty",
-      imgFile: "url('/Assets/suspects/Characters_Billy Bad.svg') no-repeat center center/cover"
+      imgFile: "url ('/Assets/suspects/Characters_Billy Bad.svg')"
     },
     {
       name: "Charlie Crying",
       desc: "Muddy Footprints",
       trait: "Why is his face covered in tears",
-      imgFile: "url('/Assets/suspects/Characters_Charlie Crying.svg') no-repeat center center/cover"
+      imgFile: "url ('/Assets/suspects/Characters_Charlie Crying.svg')"
     },
     {
       name: "Daniel Dead",
       desc: "Muddy Footprints",
       trait: "Why isn't Daniel moving?",
-      imgFile: "url('/Assets/suspects/Characters_Daniel Dead.svg') no-repeat center center/cover"
+      imgFile: "url ('/Assets/suspects/Characters_Daniel Dead.svg')"
     },
     {
       name: "Eric Evil",
       desc: "Muddy Footprints",
       trait: "Eric has a scary grin on his face!",
-      imgFile: "<url('/Assets/suspects/Characters_Eric Evil.svg') no-repeat center center/cover"
+      imgFile: "<url ('/Assets/suspects/Characters_Eric Evil.svg')"
     }
   ]
 };

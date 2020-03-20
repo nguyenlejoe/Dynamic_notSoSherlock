@@ -53,31 +53,31 @@ function addChoices(){
         case "Stolen Cookies" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[0].clues[i].imgFile + "'/ >";
+                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[0].clues[i].imgFile + ",/ >";
             }
         break;
         case "Robbery" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[1].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML =  "<img src='" + officalCrimes.inductiveCrimes[1].clues[i].imgFile + "'/ >";
+                document.querySelector("#clue"+i).innerHTML =  "<img src='" + officalCrimes.inductiveCrimes[1].clues[i].imgFile + ",/ >";
             }
             break;
         case "Unfinished Homework" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[2].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[2].clues[i].imgFile + "'/ >";
+                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[2].clues[i].imgFile + ",/ >";
             }
             break;
         case "Bullying" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[3].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[3].clues[i].imgFile + "'/ >";
+                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[3].clues[i].imgFile + ",/ >";
             }
             break;
         case "Fraud" :
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[4].choices[i].choice; 
-                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[4].clues[i].imgFile + "'/ >";
+                document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[4].clues[i].imgFile + ",/ >";
             }
             break;
           
