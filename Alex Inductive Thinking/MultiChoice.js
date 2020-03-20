@@ -1,7 +1,6 @@
 
 
-
-
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
 ///////////////////////////  OBJECTS  /////////////////////////
 var Clues =[ 
     {
@@ -35,6 +34,8 @@ var Clues =[
             ],
     }
 ]
+
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
    /* var multiChoice = [
         {a: "Cookie theft"},
         {b: "Stolen V-bucks"},
@@ -43,14 +44,19 @@ var Clues =[
 ] */
 ///////////////////////////  MULTI CHOICE QUESTION  /////////////////////////
 
-
+//Function to add choices to the page
 function addChoices(){
+    //UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
     // document.querySelector("#buttonA").innerHTML =  Clues[0].multiChoice[0][0];
     // document.querySelector("#buttonB").innerHTML =  Clues[0].multiChoice[1][0];
     // document.querySelector("#buttonC").innerHTML =  Clues[0].multiChoice[2][0];
 
+    //Switch statement to grab clues and choices that are related to the current crime
     switch(mainCrime){
+        //If string matches case then run code
         case "Stolen Cookies" :
+            //For loop to grab each item in array for both choices and clues
+            //Changes innerHTML for button and clues
             for(var i = 0; i <= 2; i++){
                 document.querySelector("#button"+i).innerHTML =  officalCrimes.inductiveCrimes[0].choices[i].choice; 
                 document.querySelector("#clue"+i).innerHTML = "<img src='" + officalCrimes.inductiveCrimes[0].clues[i].imgFile + "'/ >";
@@ -86,7 +92,7 @@ function addChoices(){
 }
 
 
-
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
 ///////////////////////////  ADDING CLUES  /////////////////////////
 
 
@@ -99,6 +105,7 @@ function addChoices(){
 
 ///////////////////////////  CLUE DETAIL DISPLAY  /////////////////////////
 
+//Function to display hints if user clicks on a certain clue
 function displayClue(cluenum){
 
     switch(cluenum){
@@ -114,7 +121,7 @@ function displayClue(cluenum){
     }
 }
 
-
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
 ///////////////////////////  CHECK ANSWER    /////////////////////////
 /* var evidence = document.getElementsByClassName("InductiveChoice");
 
@@ -131,15 +138,28 @@ switch(evidence){
 }
 */
 
-var A = officalCrimes.inductiveCrimes[crimeNum].choices[0].number;
-var B = officalCrimes.inductiveCrimes[crimeNum].choices[1].number;
-var C = officalCrimes.inductiveCrimes[crimeNum].choices[2].number;
+var A;
+var B;
+var C;
+//UNUSED -- KEPT FOR PROOF OF WORK --  GOODJOB ALEX :)
+// var A = officalCrimes.inductiveCrimes[crimeNum].choices[0].number;
+// var B = officalCrimes.inductiveCrimes[crimeNum].choices[1].number;
+// var C = officalCrimes.inductiveCrimes[crimeNum].choices[2].number;
+
+
+//CHECKING IF USER HAS CHOSEN CORRECT ANSWER
+//Each crime has choices and each choice has a set of numbers from 1-3
+//1 indicating correct
 
 function answerA(){
+
     if (A == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
+                //Next page does not require scrolling so turn overflow off
                 appOverFlow = false;
+                //Starts carousel function -- function found in "carousel.js"
+                startCarousel();
                 alert("You are truly A genius Mr.Holmes!");
                 pageSlide('clueStage','gatherPeople' );
             } else {
@@ -156,10 +176,12 @@ function answerA(){
 }
 
 function answerB(){
+
     if (B == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
                 appOverFlow = false;
+                startCarousel();
                 alert("You are truly A genius Mr.Holmes!");
                 pageSlide('clueStage','gatherPeople' );
             } else {
@@ -174,10 +196,12 @@ function answerB(){
 }
 
 function answerC(){
+
     if (C == 1){
         var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
             if (Thinking == "inductive"){
                 appOverFlow = false;
+                startCarousel();
                 alert("You are truly A genius Mr.Holmes!");
                 pageSlide('clueStage','gatherPeople' );
             } else {
