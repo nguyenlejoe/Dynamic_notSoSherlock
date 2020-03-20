@@ -11,3 +11,4 @@ function hamButton(){
         hamStatus = false;
     }
 }
+
