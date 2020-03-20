@@ -252,7 +252,7 @@ var townsPeople = {
     {
       name: "Eric Evil",
       desc: "Muddy Footprints",
-      trait: "Eric has a scary grin on his face!",
+      trait: "Eric Seems to have a scary grin on his face!",
       imgFile: "/Assets/suspects/Characters_Eric Evil.svg"
     }
   ]

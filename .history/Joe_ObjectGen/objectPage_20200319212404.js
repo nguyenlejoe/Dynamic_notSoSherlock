@@ -175,7 +175,7 @@ var officalCrimes = {
 
             Keytrait: "They won't stop laughing",
 
-            Keydesc: "seem they have paint on their hands"
+            Keydesc: "Hmm they seem to have paint on their hands"
         },
 
         {
@@ -228,7 +228,7 @@ var townsPeople = {
     {
       name: "Angela Anger",
       desc: "Muddy Footprints",
-      trait: "She seems to get angry quickly",
+      trait: "I wouldn't dare to cross her on the street!",
       imgFile: "/Assets/suspects/Characters_Angela Anger.svg"
     },
     {
@@ -252,7 +252,7 @@ var townsPeople = {
     {
       name: "Eric Evil",
       desc: "Muddy Footprints",
-      trait: "Eric has a scary grin on his face!",
+      trait: "Eric Seems to have a scary grin on his face!",
       imgFile: "/Assets/suspects/Characters_Eric Evil.svg"
     }
   ]

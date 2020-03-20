@@ -51,7 +51,7 @@ var officalCrimes = {
 
             Keytrait: "Muddy footprints",
 
-            Keydesc: "those shoes like particularily muddy",
+            Keydesc: "Lorem Ipsum",
 
         },
 
@@ -91,9 +91,9 @@ var officalCrimes = {
                 },
             ],
 
-            Keytrait: "Treated friends to dinner",
+            Keytrait: "Muddy footprints",
 
-            Keydesc: "suspiciously wealthy"
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -132,9 +132,9 @@ var officalCrimes = {
                 },
             ],
 
-            Keytrait: "Yellowed finger tips",
+            Keytrait: "Muddy footprints",
 
-            Keydesc: "why do they smell like cheese?"
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -173,9 +173,9 @@ var officalCrimes = {
                 },
             ],
 
-            Keytrait: "They won't stop laughing",
+            Keytrait: "Muddy footprints",
 
-            Keydesc: "seem they have paint on their hands"
+            Keydesc: "Lorem Ipsum"
         },
 
         {
@@ -214,9 +214,9 @@ var officalCrimes = {
                 },
             ],
 
-            Keytrait: "They have a gigantic wallet",
+            Keytrait: "Muddy footprints",
 
-            Keydesc: "why would someone need a wallet that big?!"
+            Keydesc: "Lorem Ipsum"
         },
     ]
 
@@ -226,34 +226,29 @@ var officalCrimes = {
 var townsPeople = {
   people: [
     {
-      name: "Angela Anger",
+      name: "Henry",
       desc: "Muddy Footprints",
-      trait: "She seems to get angry quickly",
-      imgFile: "/Assets/suspects/Characters_Angela Anger.svg"
+      trait: "Wrong"
     },
     {
-      name: "Billy Bad",
+      name: "Alex",
       desc: "Muddy Footprints",
-      trait: "His eyes seem shifty",
-      imgFile: "/Assets/suspects/Characters_Billy Bad.svg"
+      trait: "Wrong"
     },
     {
-      name: "Charlie Crying",
+      name: "Noah",
       desc: "Muddy Footprints",
-      trait: "Why is his face covered in tears",
-      imgFile: "/Assets/suspects/Characters_Charlie Crying.svg"
+      trait: "Wrong"
     },
     {
-      name: "Daniel Dead",
+      name: "Joe",
       desc: "Muddy Footprints",
-      trait: "Why isn't Daniel moving?",
-      imgFile: "/Assets/suspects/Characters_Daniel Dead.svg"
+      trait: "Wrong"
     },
     {
-      name: "Eric Evil",
+      name: "Aksel",
       desc: "Muddy Footprints",
-      trait: "Eric has a scary grin on his face!",
-      imgFile: "/Assets/suspects/Characters_Eric Evil.svg"
+      trait: "Wrong"
     }
   ]
 };
@@ -263,27 +258,27 @@ var town = {
     {
       owner: "Henry",
       crime: "",
-      imgFile: "/Assets/outerHouses/House-01.svg",
+      imgFile : "/Assets/outerHouses/House-01.svg",
     },
     {
       owner: "Alex",
       crime: "",
-      imgFile: "/Assets/outerHouses/House-02.svg",
+      imgFile : "/Assets/outerHouses/House-02.svg",
     },
     {
       owner: "Noah",
       crime: "",
-      imgFile: "/Assets/outerHouses/House-03.svg",
+      imgFile : "/Assets/outerHouses/House-03.svg",
     },
     {
        owner: "Aksel",
        crime: "",
-       imgFile: "/Assets/outerHouses/House-04.svg",
+       imgFile : "/Assets/outerHouses/House-04.svg",
     },
     {
        owner: "Joe",
        crime: "",
-       imgFile: "/Assets/outerHouses/House-05.svg",
+       imgFile : "/Assets/outerHouses/House-05.svg",
     },
   ]
 };
