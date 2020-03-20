@@ -1,15 +1,5 @@
-var dayState = {
-  crimeTrack: [
-    "Stolen Cookies",
-    "Robbery",
-    "Unfinished Homework",
-    "Bullying",
-    "Fraud"
-  ],
-  houseTrack: ["Henry", "Alex", "Noah", "Joe", "Aksel"],
-  culpritTrack: ["Henry", "Alex", "Noah", "Joe", "Aksel"]
-};
 
+//Offical object that stores most of the data
 var officalCrimes = {
   
     inductiveCrimes:[
@@ -250,6 +240,14 @@ var town = {
     {
       owner: "Noah",
       crime: ""
-    }
+    },
+    {
+        owner: "Joe",
+        crime: ""
+    },
+    {
+        owner: "Aksel",
+        crime: ""
+      }
   ]
 };
