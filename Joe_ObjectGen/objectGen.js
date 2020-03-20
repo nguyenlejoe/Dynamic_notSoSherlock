@@ -70,6 +70,8 @@ function removeObject(){
   town.houses.splice(houseNum, 1);
 }
 
+
+
 gameGen();
 
 

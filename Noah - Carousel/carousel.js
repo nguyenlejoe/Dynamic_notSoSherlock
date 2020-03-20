@@ -62,14 +62,14 @@ var nightCounter = 0;
 //Function to reset carousel to original position
 function startCarousel() {
   document.querySelector("#they_did_it").disabled = false;
-  currentCrim = testCheck1(slideCounter);
-  checkRecycle();
   slideCounter = 0;
+  currentCrim = testCheck1(slideCounter);
   townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[crimeNum].Keytrait;
   document.querySelector(".content__crim--name").innerHTML = townsPeople.people[slideCounter].name;
   document.querySelector("#content__crim--age").innerHTML = townsPeople.people[slideCounter].trait;
   document.querySelector(".content__crim--bio").innerHTML = townsPeople.people[slideCounter].desc;
   console.log(slideCounter);
+  checkRecycle();
 }
 
 //Switches to next person in list
@@ -127,12 +127,22 @@ function check_culprit() {
     //User is wrong and will be directed back to lose screen
       alert("wrong!");
       nightCounter++;
+      
+      //Check if it is last night
+      if(nightCounter < 4){
       //gameGen will run so the next night will continue
+      //removes current crime and house to avoid repeat
       removeObject();
       gameGen();
       pageSlide('carousel','nextNightLose');
+      
       //Adds chosen culprit to array
       checkedCulprit.push(townsPeople.people[slideCounter].name);
+      }
+      else{
+        alert("There are no more suspects! The criminal has won!");
+        pageSlide('carousel','startingPage');
+      }
   }
 }
   
@@ -169,6 +179,7 @@ function checkRecycle(){
       firstCheck = false;
   }
 }
+
 
 
 }
