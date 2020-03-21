@@ -76,6 +76,7 @@ body {
 #startingPage {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #title {
@@ -136,6 +137,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #town {
@@ -148,12 +150,13 @@ body {
 }
 
 .house {
+
   width: 180px;
   height: 270px;
   margin: 1%;
-  background-color: white;
   cursor: pointer;
 }
+
 
 /* Gathering People  */
 
@@ -183,6 +186,15 @@ body {
   align-items: center;
   flex-direction: column;
   font-size: 36pt;
+}
+
+#officalLose {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 24pt;
+  padding: 10px;
 }
 
 /* For Phone */
@@ -274,7 +286,6 @@ body {
     width: 20%;
     height: 30%;
     margin: 5px;
-    background-color: white;
   }
 
   /* Gathering People  */
@@ -314,6 +325,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 24pt;
+    padding: 10px;
   }
 }
 

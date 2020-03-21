@@ -61,14 +61,17 @@
                 <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
                 
                 <div id="suggestion">
+                  <div id="content">
                   <p></p>
-                  <button onclick="suggestionPop()">Okay!</button>
+                  <button onclick="suggestionPop('answer')">Okay!</button>
+                  </div>
+                  
                 </div>
                 
                 <div id="crimeScene">
-                    <div class="evidence" id="clue0" onclick="displayClue(1)"></div>
-                    <div class="evidence" id="clue1" onclick="displayClue(2)"></div>
-                    <div class="evidence" id="clue2" onclick="displayClue(3)"></div>
+                    <div class="evidence" id="clue0" onclick="suggestionPop('clue', 0)"></div>
+                    <div class="evidence" id="clue1" onclick="suggestionPop('clue', 1)"></div>
+                    <div class="evidence" id="clue2" onclick="suggestionPop('clue', 2)"></div>
                 </div>
                 <div id="multiChoice">
                     <button onclick="answerA()" class="InductiveChoice" name="1" id="button0">1</button>
@@ -120,12 +123,6 @@
       </div>
       </div>
 
-      <div id="officalLose" class="pages">
-        <p></p>
-        <button class="buttons" onclick="pageSlide('officalLose','startingPage')">Next</button>
-
-        <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
-      </div>
 
       <div id="nextNightLose" class="pages">
         The next night, someone has reported another crime! Lets try to find the culprit again
@@ -133,12 +130,20 @@
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
 
       </div>
+
+      <div id="officalLose" class="pages">
+        <p></p>
+        <button class="buttons" onclick="pageSlide('officalLose','startingPage')">Next</button>
+         </div>
+
       <div id="nextNightWin" class="pages">
         The next night, no one has reported a crime! You win!
 
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
 
       </div>
+
+
     </div>
     <script src="./Joe_ObjectGen/objectPage.js"></script>
     <script src="./Joe_ObjectGen/objectGen.js"></script>

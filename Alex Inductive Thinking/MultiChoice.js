@@ -168,10 +168,10 @@ function answerA(){
             
     }
         else if (A == 2){
-            suggestionPop();
+            suggestionPop('answer');
     }
         if (A == 3){
-            suggestionPop();
+            suggestionPop('answer');
 }
 }
 
@@ -188,11 +188,11 @@ function answerB(){
                 alert("Hmmmmm it seems you haven't grasped it yet Mr. Holmes, Inductive thinking is...");
             }
     } else if (B == 2){
-        suggestionPop();
+        suggestionPop('answer');
 
             }
     if (B == 3){
-        suggestionPop();
+        suggestionPop('answer');
     }
 }
 
@@ -209,9 +209,9 @@ function answerC(){
                 alert("Hmmmmm it seems you haven't grasped it yet Mr. Holmes, Inductive thinking is...");
             }
     } else if (C == 2){
-        suggestionPop();
+        suggestionPop('answer');
             }
     if (C == 3){
-        suggestionPop();
+        suggestionPop('answer');
     }
 }

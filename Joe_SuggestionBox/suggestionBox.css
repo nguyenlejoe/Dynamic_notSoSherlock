@@ -11,15 +11,15 @@ body {
   justify-content: center;
   align-items: center;
   transition: right 0.5s;
-  width: 30%;
-  height: 15%;
+  width: 15em;
+  height: 11em;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 25px;
   margin: 12px;
   border-radius: 15px;
   position: fixed;
   top: 5%;
-  right: -30%;
+  right: -20em;
   transition: right 0.3s;
 }
 
