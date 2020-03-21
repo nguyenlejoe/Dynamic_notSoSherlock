@@ -1,6 +1,7 @@
 /* Desktop and Tablet - it should be responsive for both */
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #app {
@@ -51,7 +52,7 @@ body {
   background-color: rgba(85, 124, 177);
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 25px;
   cursor: pointer;
   /* Used padding to vertically align text :) */
@@ -108,11 +109,14 @@ body {
 .buttons {
   width: 200px;
   height: 50px;
+  border: none;
   /* For Start and Tutorial Buttons */
   background-color: rgb(85, 124, 177);
+  color: white;
   border-radius: 50px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   align-items: center;
   margin: 15px;
   cursor: pointer;
@@ -140,7 +144,7 @@ body {
   align-items: center;
   width: 100%;
   height: 80%;
-  background-color: darkgreen;
+  background-color: rgba(85, 124, 177);
 }
 
 .house {
@@ -160,6 +164,10 @@ body {
   flex-direction: column;
 }
 
+#gatherPeople p {
+  font-size: 36pt;
+}
+
 /* Win or Lose screen  */
 
 #nextNightWin {
@@ -167,12 +175,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 36pt;
 }
 #nextNightLose {
   display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 36pt;
 }
 
 /* For Phone */
@@ -258,7 +268,6 @@ body {
     align-items: center;
     width: 100%;
     height: 50%;
-    background-color: green;
   }
 
   .house {
@@ -277,6 +286,11 @@ body {
     flex-direction: column;
   }
 
+  #gatherPeople p {
+    padding: 10px;
+    font-size: 24px;
+  }
+
   /* Win or Lose screen  */
 
   #nextNightWin {
@@ -284,12 +298,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 24pt;
+    padding: 10px;
   }
   #nextNightLose {
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 24pt;
   }
 }
 

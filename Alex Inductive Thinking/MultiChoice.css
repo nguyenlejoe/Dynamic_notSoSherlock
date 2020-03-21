@@ -1,23 +1,40 @@
 /* Horizontal layout for desktop and tablet made more sense to me */
+
 #clueStage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+#clueStage h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 #crimeScene {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: grey;
+  background-color: rgba(85, 124, 177);
   justify-content: center;
   align-items: center;
 }
 .evidence {
-  width: 1500px;
+  display: flex;
+  justify-content: center;
+  width: 33%;
   height: 600px;
-  background-color: rgb(158, 109, 204);
+  background-color: rgba(27, 68, 110);
   margin: 30px;
+  cursor: pointer;
+}
+
+.evidence img {
+  width: 500px;
+}
+
+.evidence:hover {
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 #multiChoice {
@@ -31,11 +48,26 @@
 }
 
 .InductiveChoice {
-  width: 1500px;
-  height: 600px;
-  background-color: rgb(44, 109, 252);
-  border-radius: 25px;
-  margin: 30px;
+  width: 225px;
+  height: 50px;
+  /* For Start and Tutorial Buttons */
+  background-color: rgb(85, 124, 177);
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+  /* Used padding to vertically align text :) */
+  padding: 12px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.InductiveChoice:hover {
+  background-color: rgba(27, 68, 110);
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 #instruction {
@@ -47,32 +79,32 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 812px) {
-  #clueStage {
+  #clueStage h1 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 15px;
+    margin-top: 75px;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   #crimeScene {
-    display: flex;
     flex-direction: column;
-    height: 130%;
-    width: 97%;
-    background-color: grey;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
   .evidence {
-    width: 20%;
-    height: 30%;
-    background-color: rgb(158, 109, 204);
-    margin: 10px;
+    width: 300px;
+    height: 300px;
   }
 
   #multiChoice {
-    width: 97%;
-    height: 60%;
-    margin-top: 3%;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -81,9 +113,7 @@
   }
 
   .InductiveChoice {
-    width: 80%;
-    height: 30%;
-    background-color: rgb(44, 109, 252);
-    border-radius: 25px;
+    margin: 25px;
+    margin-top: 10px;
   }
 }
