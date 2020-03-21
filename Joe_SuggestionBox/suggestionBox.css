@@ -1,17 +1,39 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-#app{
-    width: 100vw;
-    height: 100vh;
+#app {
+  width: 100vw;
+  height: 100vh;
 }
-#suggestion{
-    transition: right 0.5s;
-    width:30%;
-    height: 10%;
-    background-color: burlywood;
-    position: fixed;
-    top: 5%;
-    right: -30%;
+#suggestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s;
+  width: 30%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  margin: 12px;
+  border-radius: 15px;
+  position: fixed;
+  top: 5%;
+  right: -30%;
+  transition: right 0.3s;
+}
 
+#suggestion button {
+  background-color: rgba(85, 124, 177);
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  margin: 2px;
+}
+
+@media screen and (min-width: 1280px) {
+  #suggestion {
+    font-size: 24px;
+  }
 }
