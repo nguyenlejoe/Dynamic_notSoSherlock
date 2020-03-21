@@ -260,32 +260,27 @@ var town = {
     {
       owner: "Henry",
       crime: "",
-      imgFile: "./Assets/outerHouses/House-01.svg",
-      imgFileGray: "./Assets/outerHouses/houseGrayScale-01.svg",
+      imgFile: "./Assets/outerHouses/House-01.svg"
     },
     {
       owner: "Alex",
       crime: "",
-      imgFile: "./Assets/outerHouses/House-02.svg",
-      imgFileGray: "./Assets/outerHouses/houseGrayScale-02.svg",
+      imgFile: "./Assets/outerHouses/House-02.svg"
     },
     {
       owner: "Noah",
       crime: "",
-      imgFile: "./Assets/outerHouses/House-03.svg",
-      imgFileGray: "./Assets/outerHouses/houseGrayScale-03.svg",
+      imgFile: "./Assets/outerHouses/House-03.svg"
     },
     {
       owner: "Aksel",
       crime: "",
-      imgFile: "./Assets/outerHouses/House-04.svg",
-      imgFileGray: "./Assets/outerHouses/houseGrayScale-04.svg",
+      imgFile: "./Assets/outerHouses/House-04.svg"
     },
     {
       owner: "Joe",
       crime: "",
-      imgFile: "./Assets/outerHouses/House-05.svg",
-      imgFileGray: "./Assets/outerHouses/houseGrayScale-05.svg",
+      imgFile: "./Assets/outerHouses/House-05.svg"
     }
   ]
 };
