@@ -28,15 +28,15 @@ var officalCrimes = {
       choices: [
         {
           choice: "Unfinished Assignment",
-          number: 3
+          number: 3,
         },
         {
           choice: "Stolen Cookies",
-          number: 1
+          number: 1,
         },
         {
           choice: "Stolen Game",
-          number: 2
+          number: 2,
         }
       ],
 
@@ -71,15 +71,15 @@ var officalCrimes = {
       choices: [
         {
           choice: "Robbery",
-          number: 1
+          number: 1,
         },
         {
           choice: "Delusion",
-          number: 3
+          number: 3,
         },
         {
           choice: "Borrowed items",
-          number: 2
+          number: 2,
         }
       ],
 
@@ -113,15 +113,15 @@ var officalCrimes = {
       choices: [
         {
           choice: "Gluttony",
-          number: 3
+          number: 3,
         },
         {
           choice: "Wastefulness",
-          number: 2
+          number: 2,
         },
         {
           choice: "Unfinished Assignment",
-          number: 1
+          number: 1,
         }
       ],
 
@@ -154,15 +154,15 @@ var officalCrimes = {
       choices: [
         {
           choice: "Earthquake",
-          number: 3
+          number: 3,
         },
         {
           choice: "Bullying",
-          number: 1
+          number: 1,
         },
         {
           choice: "Prank",
-          number: 2
+          number: 2,
         }
       ],
 
@@ -200,11 +200,11 @@ var officalCrimes = {
         },
         {
           choice: "Acting",
-          number: 3
+          number: 3,
         },
         {
           choice: "Multiple Personality Disorder",
-          number: 2
+          number: 2,
         }
       ],
 

@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="Joe_SuggestionBox/suggestionBox.css">
   </head>
   <body>
     <div id="app">
@@ -58,6 +59,12 @@
 
             <div id="clueStage" class="pages">
                 <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
+                
+                <div id="suggestion">
+                  <p></p>
+                  <button onclick="suggestionPop()">Okay!</button>
+                </div>
+                
                 <div id="crimeScene">
                     <div class="evidence" id="clue0" onclick="displayClue(1)"></div>
                     <div class="evidence" id="clue1" onclick="displayClue(2)"></div>
@@ -134,5 +141,6 @@
     <script src="app.js"></script>
     <script src="./Joe_PageTransitions/transition.js"></script>
     <script src="./Noah - Carousel/carousel.js"></script>
+    <script src="./Joe_SuggestionBox/suggestionBox.js"></script>
   </body>
 </html>
