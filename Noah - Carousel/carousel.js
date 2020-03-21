@@ -62,6 +62,7 @@ var nightCounter = 0;
 //Function to reset carousel to original position
 function startCarousel() {
   document.querySelector("#they_did_it").disabled = false;
+  document.querySelector("#they_did_it").style.backgroundColor = "rgb(85, 124, 177)";
   slideCounter = 0;
   currentCrim = testCheck1(slideCounter);
   townsPeople.people[culpritNum].trait = officalCrimes.inductiveCrimes[crimeNum].Keytrait;
@@ -90,6 +91,7 @@ function next_slide() {
     document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
     console.log(slideCounter);
   }
+  document.querySelector("#they_did_it").style.backgroundColor = "rgb(85, 124, 177)";
   document.querySelector("#they_did_it").disabled = false;
   currentCrim = testCheck1(slideCounter);
   checkRecycle();
@@ -114,7 +116,7 @@ function last_slide() {
     document.querySelector(".slide").style.background = townsPeople.people[slideCounter].imgFile;
     console.log(slideCounter);
   }
-  document.querySelector("#they_did_it").innerHTML = "They did it!";
+  document.querySelector("#they_did_it").style.backgroundColor = "rgb(85, 124, 177)";
   document.querySelector("#they_did_it").disabled = false;
   currentCrim = testCheck1(slideCounter);
   checkRecycle();
@@ -122,6 +124,7 @@ function last_slide() {
 
 //Function to check if user has picked the right culprit
 function check_culprit() {
+  appOverFlow = false;
   //Main variable compared to the one chosen by user
   if (mainCulprit === townsPeople.people[slideCounter].name) {
     alert("Right!");
@@ -130,7 +133,7 @@ function check_culprit() {
   } 
   else{
     //User is wrong and will be directed back to lose screen
-      alert("wrong!");
+      appOverFlow = true;
       nightCounter++;
       
       //Check if it is last night
@@ -145,8 +148,8 @@ function check_culprit() {
       checkedCulprit.push(townsPeople.people[slideCounter].name);
       }
       else{
-        alert("There are no more suspects! The criminal has won!");
-        pageSlide('carousel','startingPage');
+        document.querySelector("#officalLose").innerHTML = "There are no more culprits to choose! The criminal was " + mainCulprit;
+        pageSlide('carousel','officalLose');
       }
   }
 }
@@ -156,15 +159,15 @@ function check_culprit() {
 function testCheck1(slideCounter){
   switch(slideCounter){
     case 0:
-      return("Henry");
+      return("Angela Anger");
     case 1:
-      return("Alex");
+      return("Billy Bad");
     case 2:
-      return("Noah");
+      return("Charlie Crying");
     case 3:
-      return("Joe");
+      return("Daniel Dead");
     case 4:
-      return("Aksel");
+      return("Eric Evil");
   }
 }
 
@@ -176,6 +179,7 @@ function checkRecycle(){
     for(var c = 0; c <= checkedCulprit.length; c++){
       if(currentCrim === checkedCulprit[c]){
         document.querySelector("#they_did_it").disabled = true;
+        document.querySelector("#they_did_it").style.backgroundColor = "grey";
       }
     }
 }
