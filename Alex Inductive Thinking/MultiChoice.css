@@ -1,7 +1,7 @@
 /* Horizontal layout for desktop and tablet made more sense to me */
 
 #clueStage {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }

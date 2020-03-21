@@ -1,3 +1,4 @@
+
 //Offical object that stores most of the data
 var officalCrimes = {
   inductiveCrimes: [
@@ -221,36 +222,35 @@ var townsPeople = {
       desc: "Muddy Footprints",
       trait: "She seems to get angry quickly",
       imgFile:
-
-        "url('/Assets/suspects/Characters_Angela Anger.svg') no-repeat center"
+        "url('./Assets/suspects/Characters_Angela Anger.svg') no-repeat center center/cover"
     },
     {
       name: "Billy Bad",
       desc: "Muddy Footprints",
       trait: "His eyes seem shifty",
       imgFile:
-        "url('/Assets/suspects/Characters_Billy Bad.svg') no-repeat center"
+        "url('./Assets/suspects/Characters_Billy Bad.svg') no-repeat center center/cover"
     },
     {
       name: "Charlie Crying",
       desc: "Muddy Footprints",
       trait: "Why is his face covered in tears",
       imgFile:
-        "url('/Assets/suspects/Characters_Charlie Crying.svg') no-repeat center"
+        "url('./Assets/suspects/Characters_Charlie Crying.svg') no-repeat center center/cover"
     },
     {
       name: "Daniel Dead",
       desc: "Muddy Footprints",
       trait: "Why isn't Daniel moving?",
       imgFile:
-        "url('/Assets/suspects/Characters_Daniel Dead.svg') no-repeat center"
+        "url('./Assets/suspects/Characters_Daniel Dead.svg') no-repeat center center/cover"
     },
     {
       name: "Eric Evil",
       desc: "Muddy Footprints",
       trait: "Eric has a scary grin on his face!",
       imgFile:
-        "url('/Assets/suspects/Characters_Eric Evil.svg') no-repeat center"
+        "url('./Assets/suspects/Characters_Eric Evil.svg') no-repeat center center/cover"
     }
   ]
 };
@@ -258,28 +258,28 @@ var townsPeople = {
 var town = {
   houses: [
     {
-      owner: "Henry",
-      crime: "",
-      imgFile: "./Assets/outerHouses/House-01.svg"
+      owner: "Angela Anger",
+      innerImg: "",
+      imgFile: "<img scr='/Assets/outerHouses/House-01.svg'/>"
     },
     {
-      owner: "Alex",
-      crime: "",
+      owner: "Billy Bad",
+      innerImg: "",
       imgFile: "./Assets/outerHouses/House-02.svg"
     },
     {
-      owner: "Noah",
-      crime: "",
+      owner: "Charlie Crying",
+      innerImg: "",
       imgFile: "./Assets/outerHouses/House-03.svg"
     },
     {
-      owner: "Aksel",
-      crime: "",
+      owner: "Daniel Dead",
+      innerImg: "",
       imgFile: "./Assets/outerHouses/House-04.svg"
     },
     {
-      owner: "Joe",
-      crime: "",
+      owner: "Eric Evil",
+      innerImg: "",
       imgFile: "./Assets/outerHouses/House-05.svg"
     }
   ]

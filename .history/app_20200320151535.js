@@ -12,7 +12,6 @@ function hamButton(){
     }
 }
 
-
 function displayHouses(){
     document.querySelector("#houseA").innerHTML = "<img src='" + town.houses[0].imgFile + "' />";
     document.querySelector("#houseB").innerHTML = "<img src='" + town.houses[1].imgFile + "' />";
