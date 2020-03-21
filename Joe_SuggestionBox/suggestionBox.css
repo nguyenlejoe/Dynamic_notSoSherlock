@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+}
+#suggestion{
+    transition: right 0.5s;
+    width:30%;
+    height: 10%;
+    background-color: burlywood;
+    position: fixed;
+    top: 5%;
+    right: -30%;
+
+}
