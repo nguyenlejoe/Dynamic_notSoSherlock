@@ -1,4 +1,5 @@
 var hamStatus = false;
+var lTheme = false;
 
 //Hamburger menu function
 function hamButton(){
@@ -9,6 +10,27 @@ function hamButton(){
     else{
         document.querySelector("#menuPopup").style.left = "-80%";  
         hamStatus = false;
+    }
+}
+
+var LthemeS = new Audio();
+LthemeS.src = "./Assets/Death Note - (L's Theme A) Music.mp3";
+
+function playMusic(){
+
+}
+
+
+function playMusic(){
+    if(lTheme === false){
+        LthemeS.play();
+        console.log("play");
+        lTheme = true;
+    }
+    else{
+       LthemeS.pause();
+        console.log("stop");
+        lTheme = false;
     }
 }
 

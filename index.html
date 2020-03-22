@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="Joe_SuggestionBox/suggestionBox.css">
   </head>
   <body>
+    <audio class="audioToggle" src="./Assets/Death Note - (L's Theme A) Music.mp3"></audio>
     <div id="app">
       <!-- JOE -->
       <div id="menuPopup">
-        <div class="menuItems">Music</div>
+        <div class="menuItems" onclick="playMusic()" >Music</div>
         <div class="menuItems">Sound FX</div>
         <div class="menuItems">Display</div>
         <div class="menuItems" onclick="pageSlide('townPage', 'startingPage')">Back to home</a></div>
@@ -30,7 +31,9 @@
           <p>NOT SO SHERLOCK</p>
         </div>
 
-        <div id="sherlockGif"></div>
+        <div class="sherlockImg"> 
+          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        </div>
 
         <div id="options">
           <div
