@@ -49,20 +49,13 @@
 
       <!-- TOWN PAGE -->
       <div id="townPage" class="pages">
-
-        <h2>A crime happened in this neighborhood, choose a house!</h2> 
-
+        <p>A crime happened in this neighborhood, choose a house!</p>
         <div id="town">
           <div class="house" id="houseA" onclick="checkCrimeHouse(1)">Henry</div>
           <div class="house" id="houseB" onclick="checkCrimeHouse(2)">Alex</div>
           <div class="house" id="houseC" onclick="checkCrimeHouse(3)">Noah</div>
           <div class="house" id="houseD" onclick="checkCrimeHouse(4)">Joe</div>
           <div class="house" id="houseE" onclick="checkCrimeHouse(5)">Aksel</div>
-                  <!-- <div id="suggestion">
-          <div id="content">
-          <p></p>
-          <button onclick="suggestionPop('answer')">Okay!</button>
-          </div> -->
         </div>
       </div>
       
@@ -93,17 +86,11 @@
 
 
             <div id="gatherPeople" class="pages">
-              <div class="sherlockImg"> 
-                <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-              </div>
-              <!-- Had to make a div so ican put a flex to center align everything -->
-              <div id="gatherPeople__img">
               <p>Lets gather the towns people and see who the culprit is!</p>
-              <div class="sherlock1">
+              <div class="sherlock">
                 <img src="./Assets/Sherlock.svg" alt="">
               </div>
               <button class="buttons" onclick="pageSlide('gatherPeople','carousel')">Next</button>
-              </div>
             </div>
 
       <!-- NOAH -->
@@ -145,13 +132,12 @@
 
 
       <div id="nextNightLose" class="pages">
-        <div class="sherlockImg"> 
-          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        The next night, someone has reported another similar crime! Lets try that again.
+        <div class="sherlock">
+          <img src="./Assets/Sherlock.svg" alt="">
         </div>
-        <div class="nextNight__img">
-        The next night, someone has reported another crime! Lets try to find the culprit again
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
-        </div>
+
       </div>
 
       <div id="officalLose" class="pages">
@@ -160,13 +146,12 @@
          </div>
 
       <div id="nextNightWin" class="pages">
-        <div class="sherlockImg"> 
-          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        <p>The next night, no one has reported a crime! You win!</p>
+        <div class="sherlock">
+          <img src="./Assets/Sherlock.svg" alt="">
         </div>
-        <div class="nextNight__img">
-        The next night, no one has reported a crime! You win!
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
-        </div>
+
       </div>
 
 

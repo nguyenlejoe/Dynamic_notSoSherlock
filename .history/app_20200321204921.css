@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
 }
 
 .pages {
@@ -146,7 +147,6 @@ body {
 #townPage h2{
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 #town {
@@ -154,7 +154,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90%;
+  height: 80%;
   background-color: rgba(85, 124, 177);
   background-image: url(./Assets/houseBackground.svg);
   background-repeat: no-repeat;
@@ -163,11 +163,9 @@ body {
 }
 
 .house {
-  display: grid;
   width: 180px;
   height: 270px;
   margin: 1%;
-  align-content: center;
   cursor: pointer;
 }
 
@@ -175,13 +173,9 @@ body {
 
 #gatherPeople {
   display: none;
-  padding-top: 01%;
+  padding-top: 05%;
   align-items: center;
   flex-direction: column;
-  background-image: url(./Assets/houseBackground.svg);
-  background-repeat: no-repeat;
-  background-position: inherit;
-  background-size: cover;
 }
 
 #gatherPeople p {
@@ -215,33 +209,12 @@ body {
   padding: 10px;
 }
 
-/* sherlock image */
-.sherlockImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20%;
-}
-
-.sherlockImg img {
-  height: 500%;
-  width: 500%;
-}
-
-#gatherPeople__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.nextNight__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
+.sherlock{
+  width: 30%;
+  height: auto;
+  max-width: 20%;
+  }
+  
 
 /* For Phone */
 @media screen and (min-width: 375px) and (max-width: 812px) {
@@ -293,6 +266,11 @@ body {
     font-size: 35px;
   }
 
+  .sherlockImg {
+    height: 50%;
+    width: 200%;
+  }
+
   #options {
     height: 50%;
     width: 100%;
@@ -341,10 +319,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(./Assets/houseBackground.svg);
-    background-repeat: no-repeat;
-    background-position: 0px -300px;
-    background-size: cover;
   }
 
   #gatherPeople p {
@@ -381,16 +355,6 @@ body {
     flex-direction: column;
     font-size: 24pt;
     padding: 10px;
-  }
-
-  /* SHerlock Background */
-  .sherlockImg {
-    margin-top: 65%;
-  }
-
-  .sherlockImg img {
-    height: 400%;
-    width: 400%;
   }
 }
 
