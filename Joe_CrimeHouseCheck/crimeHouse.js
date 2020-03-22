@@ -1,5 +1,29 @@
 var checkedHouse = [];
 
+var openBox = false;
+
+// function suggestionPop2(type, houseNum) {
+//   if (type === "answer") {
+//     if (openBox === false) {
+//       document.querySelector("#suggestion").style.right = "0";
+//       document.querySelector("#suggestion p").innerHTML = "How not to be idiot";
+//       openBox = true;
+//     } else {
+//       document.querySelector("#suggestion").style.right = "-20em";
+//       openBox = false;
+//     }
+//   } else if (type === "clue") {
+//     if (openBox === false) {
+//       document.querySelector("#suggestion").style.right = "0";
+//       document.querySelector("#suggestion p").innerHTML = "Lorem Ipsum";
+//       openBox = true;
+//     } else {
+//       document.querySelector("#suggestion").style.right = "-20em";
+//       openBox = false;
+//     }
+//   }
+// }
+
 //Checks if user has picked the house that the crime has occured in
 
 function checkCrimeHouse(houseNum) {
@@ -10,15 +34,15 @@ function checkCrimeHouse(houseNum) {
         appOverFlow = true;
         //Lets users know crime has been found if correct
         pageSlide("townPage", "clueStage");
-  
+
         //Adds choices to the page -- function found in "MultiChoice.js"
         addChoices();
 
         displayHouseGray(1);
-
       } else {
         //If user picks a house that does not have a crime in it
         alert("Nothing");
+        // suggestionPop2("Nothing");
       }
       break;
 
@@ -30,6 +54,7 @@ function checkCrimeHouse(houseNum) {
         displayHouseGray(2);
       } else {
         alert("Nothing");
+        // suggestionPop2("Nothing");
       }
       break;
 
@@ -41,6 +66,7 @@ function checkCrimeHouse(houseNum) {
         displayHouseGray(3);
       } else {
         alert("Nothing");
+        // suggestionPop2("Nothing");
       }
       break;
 
@@ -52,6 +78,7 @@ function checkCrimeHouse(houseNum) {
         displayHouseGray(4);
       } else {
         alert("Nothing");
+        // suggestionPop2("Nothing");
       }
       break;
 
@@ -63,8 +90,10 @@ function checkCrimeHouse(houseNum) {
         displayHouseGray(5);
       } else {
         alert("Nothing");
+        // suggestionPop2("Nothing");
       }
       break;
   }
 }
 
+// window.onload = suggestionPop2();
