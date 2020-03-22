@@ -336,7 +336,7 @@ body {
     flex-direction: column;
     background-image: url(./Assets/houseBackground.svg);
     background-repeat: no-repeat;
-    background-position: 0px -300px;
+    background-position: right;
     background-size: cover;
   }
 
