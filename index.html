@@ -91,8 +91,14 @@
 
 
             <div id="gatherPeople" class="pages">
+              <div class="sherlockImg"> 
+                <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+              </div>
+              <!-- Had to make a div so ican put a flex to center align everything -->
+              <div id="gatherPeople__img">
               <p>Lets gather the towns people and see who the culprit is!</p>
               <button class="buttons" onclick="pageSlide('gatherPeople','carousel')">Next</button>
+              </div>
             </div>
 
       <!-- NOAH -->
@@ -134,10 +140,13 @@
 
 
       <div id="nextNightLose" class="pages">
+        <div class="sherlockImg"> 
+          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        </div>
+        <div class="nextNight__img">
         The next night, someone has reported another crime! Lets try to find the culprit again
-
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
-
+        </div>
       </div>
 
       <div id="officalLose" class="pages">
@@ -146,10 +155,13 @@
          </div>
 
       <div id="nextNightWin" class="pages">
+        <div class="sherlockImg"> 
+          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        </div>
+        <div class="nextNight__img">
         The next night, no one has reported a crime! You win!
-
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
-
+        </div>
       </div>
 
 
