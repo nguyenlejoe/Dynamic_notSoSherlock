@@ -154,7 +154,7 @@ var C;
 function answerA(){
 
     if (A == 1){
-        var Thinking = prompt("You are Correct Mr.Holmes! Did you use Inductive or Deductive Thinking?");
+        var Thinking = prompt('You are Correct Mr.Holmes! Did you use "inductive" or "deductive" Thinking?');
             if (Thinking == "inductive"){
                 //Next page does not require scrolling so turn overflow off
                 appOverFlow = false;

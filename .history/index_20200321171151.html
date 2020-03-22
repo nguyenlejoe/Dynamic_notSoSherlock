@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="./Alex Inductive Thinking/MultiChoice.css" />
+    <link rel="stylesheet" href="./Noah - Carousel/carousel.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Joe_SuggestionBox/suggestionBox.css">
+  </head>
+  <body>
+    <audio class="LTheme" autoplay src="./Assets/Death Note - (L's Theme A) Music.mp3"></audio>
+    <div id="app">
+      <!-- JOE -->
+      <div id="menuPopup">
+        <div class="menuItems">Music</div>
+        <div class="menuItems">Sound FX</div>
+        <div class="menuItems">Display</div>
+        <div class="menuItems" onclick="pageSlide('townPage', 'startingPage')">Back to home</a></div>
+        <p>Team SpeedWagon Foundation</p>
+    </div>
+      <!-- STARTING PAGE -->
+      <div id="menuButton" class="material-icons" onclick="hamButton()">menu</div>
+
+      <div id="startingPage" class="pages">
+        <div id="title">
+          <p>NOT SO SHERLOCK</p>
+        </div>
+
+        <div class="sherlockImg"> 
+          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        </div>
+
+        <div id="options">
+          <div
+            id="start"
+            class="buttons"
+            onclick="pageSlide('startingPage', 'townPage')"
+          >
+            START
+          </div>
+          <div id="tutorial" class="buttons">TUTORIAL</div>
+        </div>
+      </div>
+
+      <!-- TOWN PAGE -->
+      <div id="townPage" class="pages">
+        <div id="town">
+          <div class="house" id="houseA" onclick="checkCrimeHouse(1)">Henry</div>
+          <div class="house" id="houseB" onclick="checkCrimeHouse(2)">Alex</div>
+          <div class="house" id="houseC" onclick="checkCrimeHouse(3)">Noah</div>
+          <div class="house" id="houseD" onclick="checkCrimeHouse(4)">Joe</div>
+          <div class="house" id="houseE" onclick="checkCrimeHouse(5)">Aksel</div>
+        </div>
+      </div>
+      
+    <!-- ALEX -->
+
+            <div id="clueStage" class="pages">
+                <h1 id="instruction">Click on the Clues you find below to get additional observations</h1>
+                
+                <div id="suggestion">
+                  <div id="content">
+                  <p></p>
+                  <button onclick="suggestionPop('answer')">Okay!</button>
+                  </div>
+                  
+                </div>
+                
+                <div id="crimeScene">
+                    <div class="evidence" id="clue0" onclick="suggestionPop('clue', 0)"></div>
+                    <div class="evidence" id="clue1" onclick="suggestionPop('clue', 1)"></div>
+                    <div class="evidence" id="clue2" onclick="suggestionPop('clue', 2)"></div>
+                </div>
+                <div id="multiChoice">
+                    <button onclick="answerA()" class="InductiveChoice" name="1" id="button0">1</button>
+                    <button onclick="answerB()" class="InductiveChoice" name="2" id="button1">2</button>
+                    <button onclick="answerC()" class="InductiveChoice" name="3" id="button2">3</button>
+                 </div> 
+            </div> 
+
+
+            <div id="gatherPeople" class="pages">
+              <p>Lets gather the towns people and see who the culprit is!</p>
+              <button class="buttons" onclick="pageSlide('gatherPeople','carousel')">Next</button>
+            </div>
+
+      <!-- NOAH -->
+      <div id="carousel" class="pages">
+        <div class="slide">
+          <div class="content">
+            <h1 class="content__crim--name" onclick="test()">Criminal</h1>
+            <div id="content__crim--age">
+              <h3>Traits</h3>
+            </div>
+            <p class="content__crim--bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quasi temporibus voluptatibus voluptate laudantium eaque neque
+              officiis eos ut, in veniam deleniti ad itaque! Voluptatem fugit id
+              soluta temporibus minus!
+            </p>
+          </div>
+        </div>
+        <div class="carousel__button--container">
+          <div class="carsousel__button--center">
+            <button id="they_did_it" onclick="check_culprit()">
+              They did it!
+            </button>
+          </div>
+        </div>
+        <div class="carousel__button">
+          <button id="prev" onclick="last_slide()">
+            <i class="material-icons">
+              arrow_back
+            </i>
+          </button>
+          <button id="next" onclick="next_slide()">
+            <i class="material-icons">
+              arrow_forward
+            </i>
+          </button>
+      </div>
+      </div>
+
+
+      <div id="nextNightLose" class="pages">
+        The next night, someone has reported another crime! Lets try to find the culprit again
+
+        <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
+
+      </div>
+
+      <div id="officalLose" class="pages">
+        <p></p>
+        <button class="buttons" onclick="pageSlide('officalLose','startingPage')">Next</button>
+         </div>
+
+      <div id="nextNightWin" class="pages">
+        The next night, no one has reported a crime! You win!
+
+        <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
+
+      </div>
+
+
+    </div>
+    <script src="./Joe_ObjectGen/objectPage.js"></script>
+    <script src="./Joe_ObjectGen/objectGen.js"></script>
+    <script src="./Alex Inductive Thinking/MultiChoice.js"></script>
+    <script src="./Joe_CrimeHouseCheck/crimeHouse.js"></script>
+    <script src="app.js"></script>
+    <script src="./Joe_PageTransitions/transition.js"></script>
+    <script src="./Noah - Carousel/carousel.js"></script>
+    <script src="./Joe_SuggestionBox/suggestionBox.js"></script>
+  </body>
+</html>
