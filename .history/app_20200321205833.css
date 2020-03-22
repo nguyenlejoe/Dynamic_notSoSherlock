@@ -164,11 +164,9 @@ body {
 }
 
 .house {
-  display: grid;
   width: 180px;
   height: 270px;
   margin: 1%;
-  align-content: center;
   cursor: pointer;
 }
 
@@ -176,13 +174,9 @@ body {
 
 #gatherPeople {
   display: none;
-  padding-top: 01%;
+  padding-top: 05%;
   align-items: center;
   flex-direction: column;
-  background-image: url(./Assets/houseBackground.svg);
-  background-repeat: no-repeat;
-  background-position: inherit;
-  background-size: cover;
 }
 
 #gatherPeople p {
@@ -215,14 +209,6 @@ body {
   font-size: 24pt;
   padding: 10px;
 }
-
-
-.sherlock1{
-  width: 30%;
-  height: auto;
-  max-width: 20%;
-  }
-
 
 .sherlock{
   width: 30%;
@@ -334,10 +320,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(./Assets/houseBackground.svg);
-    background-repeat: no-repeat;
-    background-position: 0px -300px;
-    background-size: cover;
   }
 
   #gatherPeople p {
