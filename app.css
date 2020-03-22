@@ -143,7 +143,7 @@ body {
   flex-direction: column;
 }
 
-#townPage h2{
+#townPage h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -224,8 +224,9 @@ body {
 }
 
 .sherlockImg img {
-  height: 500%;
-  width: 500%;
+  margin-top: 5%;
+  height: 400%;
+  width: 400%;
 }
 
 #gatherPeople__img {
@@ -241,7 +242,6 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 
 /* For Phone */
 @media screen and (min-width: 375px) and (max-width: 812px) {
@@ -351,7 +351,6 @@ body {
     padding: 05%;
     font-size: 24px;
     text-align: center;
-    
   }
 
   /* Win or Lose screen  */
@@ -389,17 +388,28 @@ body {
   }
 
   .sherlockImg img {
+    margin-top: 25%;
     height: 400%;
     width: 400%;
   }
 }
 
-.sherlock{
-width: 100%;
-height: auto;
-min-width: 50%;
+.sherlock {
+  width: 100%;
+  height: auto;
+  min-width: 50%;
 }
 
+@media screen and (min-width: 1280px) {
+  .sherlock1 {
+    margin-bottom: 10%;
+    height: 25%;
+    width: 25%;
+  }
+  .sherlockImg {
+    display: none;
+  }
+}
 /* Colors
 Light Blue: #9BBEED, rgba(155,190,237);
 Medium Blue: #557CB1, rgba(85,124,177);
