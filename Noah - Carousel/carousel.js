@@ -127,7 +127,6 @@ function check_culprit() {
   appOverFlow = false;
   //Main variable compared to the one chosen by user
   if (mainCulprit === townsPeople.people[slideCounter].name) {
-    alert("Right!");
     //User is correct and will be directed to win screen
     restartObjects();
     gameGen();
@@ -150,9 +149,9 @@ function check_culprit() {
       checkedCulprit.push(townsPeople.people[slideCounter].name);
       }
       else{
-        document.querySelector("#officalLose").innerHTML = "There are no more culprits to choose! The criminal was " + mainCulprit;
+        document.querySelector("#officalLose p").innerHTML = "There are no more culprits to choose! The criminal was " + mainCulprit;
         restartObjects();
-        gameGen()
+        gameGen();
         pageSlide('carousel','officalLose');
       }
   }
