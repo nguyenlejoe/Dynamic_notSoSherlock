@@ -136,7 +136,7 @@ body {
 /* TOWN PAGE */
 
 #townPage {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -423,6 +423,7 @@ body {
     height: 100%;
     width: 100%;
   }
+
 }
 /* Colors
 Light Blue: #9BBEED, rgba(155,190,237);
