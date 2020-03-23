@@ -207,14 +207,6 @@ body {
   font-size: 36pt;
 }
 
-#nextNightWin p{
-  text-align: center;
-}
-
-#nextNightLose p{
-  text-align: center;
-}
-
 #officalLose {
   display: none;
   justify-content: center;
@@ -232,14 +224,11 @@ body {
   }
 
 
-  .sherlock{
-    width: 10%;
-    height: auto;
-    min-width: 10%;
-    align-content: center;
-    align-self: center;
-
-    }
+.sherlock{
+  width: 20%;
+  height: auto;
+  max-width: 10%;
+  }
   
 
 /* For Phone */
@@ -369,10 +358,6 @@ body {
     padding: 10px;
   }
 
-  #nextNightWin p{
-    text-align: center;
-  }
-
   #nextNightLose p{
     text-align: center;
   }
@@ -398,13 +383,12 @@ body {
   }
 }
 
-.sherlock1{
-  width: 100%;
+.sherlock{
+  width: 50%;
   height: auto;
-  min-width: 60%;
+  min-width: 50%;
   align-content: center;
   align-self: center;
-  padding-left: 15px;
   }
 
 .sherlock{
@@ -413,7 +397,6 @@ height: auto;
 min-width: 50%;
 align-content: center;
 align-self: center;
-margin-left: 25px;
 }
 
 /* Colors

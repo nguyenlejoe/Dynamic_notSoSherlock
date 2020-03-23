@@ -233,12 +233,12 @@ body {
 
 
   .sherlock{
-    width: 10%;
+    width: 20%;
     height: auto;
-    min-width: 10%;
+    min-width: 20%;
     align-content: center;
     align-self: center;
-
+    margin-left: 25px;
     }
   
 
