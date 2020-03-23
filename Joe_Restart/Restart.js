@@ -291,15 +291,21 @@ function restartObjects(){
     ]
   };
     
+
+
   firstNight = true;
+
+  nightCounter = 0;
 
   checkedCulprit = [];
 
   displayHouses();
+
+
 }
 
 function restartHome(){
   restartObjects();
   gameGen();
-  pageSlide('townPage', 'startingPage');
+  pageSlide('carousel', 'startingPage');
 }
