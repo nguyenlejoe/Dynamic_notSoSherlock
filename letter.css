@@ -1,0 +1,26 @@
+.intro {
+  display: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.letter--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10%;
+}
+
+#intro__title {
+  font-weight: bold;
+  font-size: 36pt;
+}
+
+.intro__defs p {
+  font-size: 24px;
+}
+
+#intro--button {
+  display: flex;
+  justify-content: center;
+}
