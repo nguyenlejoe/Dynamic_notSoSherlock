@@ -293,5 +293,13 @@ function restartObjects(){
     
   firstNight = true;
 
+  checkedCulprit = [];
+
   displayHouses();
+}
+
+function restartHome(){
+  restartObjects();
+  gameGen();
+  pageSlide('townPage', 'startingPage');
 }

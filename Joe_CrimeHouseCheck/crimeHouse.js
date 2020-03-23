@@ -32,6 +32,7 @@ function checkCrimeHouse(houseNum) {
       if (mainHouse === "Henry") {
         //Next page will involve scrolling so turn overflow on
         appOverFlow = true;
+        alert("Crime has been found!");
         //Lets users know crime has been found if correct
         pageSlide("townPage", "clueStage");
 
@@ -41,7 +42,7 @@ function checkCrimeHouse(houseNum) {
         displayHouseGray(1);
       } else {
         //If user picks a house that does not have a crime in it
-        alert("Nothing");
+        alert("No crime here!");
         // suggestionPop2("Nothing");
       }
       break;
@@ -49,11 +50,12 @@ function checkCrimeHouse(houseNum) {
     case 2:
       if (mainHouse === "Alex") {
         appOverFlow = true;
+        alert("Crime has been found!");
         pageSlide("townPage", "clueStage");
         addChoices();
         displayHouseGray(2);
       } else {
-        alert("Nothing");
+        alert("No crime here!");
         // suggestionPop2("Nothing");
       }
       break;
@@ -61,23 +63,24 @@ function checkCrimeHouse(houseNum) {
     case 3:
       if (mainHouse === "Noah") {
         appOverFlow = true;
+        alert("Crime has been found!");
         pageSlide("townPage", "clueStage");
         addChoices();
         displayHouseGray(3);
       } else {
-        alert("Nothing");
-        // suggestionPop2("Nothing");
+        alert("No crime here!");
       }
       break;
 
     case 4:
       if (mainHouse === "Joe") {
         appOverFlow = true;
+        alert("Crime has been found!");
         pageSlide("townPage", "clueStage");
         addChoices();
         displayHouseGray(4);
       } else {
-        alert("Nothing");
+        alert("No crime here!");
         // suggestionPop2("Nothing");
       }
       break;
@@ -85,11 +88,12 @@ function checkCrimeHouse(houseNum) {
     case 5:
       if (mainHouse === "Aksel") {
         appOverFlow = true;
+        alert("Crime has been found!");
         pageSlide("townPage", "clueStage");
         addChoices();
         displayHouseGray(5);
       } else {
-        alert("Nothing");
+        alert("No crime here!");
         // suggestionPop2("Nothing");
       }
       break;

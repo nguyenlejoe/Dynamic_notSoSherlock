@@ -6,7 +6,7 @@ function suggestionPop(type, clueNum){
        
         if(openBox === false){
             document.querySelector("#suggestion").style.right = "0";
-            document.querySelector("#suggestion p").innerHTML = "<b>Try again!</b> <br> Inductive reasoning is when you make conclusions based on your experiences and observations.";
+            document.querySelector("#suggestion p").innerHTML = "Try again! Inductive reasoning is when you make conclusions based on your experiences and observations.";
             openBox = true;
         }
         else{

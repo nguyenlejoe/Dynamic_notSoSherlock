@@ -18,10 +18,9 @@
       <!-- JOE -->
       <div id="menuPopup">
         <div class="menuItems" onclick="playMusic()" >Music</div>
-        <!-- <div class="menuItems">Sound FX</div>
-        <div class="menuItems">Display</div> -->
-        <div class="menuItems" onclick="restartHome()">Restart Game</a></div>
-
+        <div class="menuItems">Sound FX</div>
+        <div class="menuItems">Display</div>
+        <div class="menuItems" onclick="pageSlide('townPage', 'startingPage')">Back to home</a></div>
         <p>Team SpeedWagon Foundation</p>
     </div>
       <!-- STARTING PAGE -->
@@ -145,13 +144,6 @@
       </div>
 
 
-      <div id="officalLose" class="pages">
-        <p></p>
-        
-        <button class="buttons" onclick="pageSlide('officalLose','startingPage')">Next</button>
-         </div>
-
-
       <div id="nextNightLose" class="pages">
         <!-- <div class="sherlockImg"> 
           <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
@@ -159,18 +151,15 @@
         <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
 
         <div class="nextNight__img">
-        <p style="text-align: center;"><b>Try Again!</b><br>The next night, someone reported another crime!</p>
+        <p style="text-align: center;"><b>Try again!</b><br>The next night, someone reported another crime!</p>
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
         </div>
       </div>
 
-
       <div id="officalLose" class="pages">
-        <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        <p style="text-align: center;"></p>
+        <p></p>
         <button class="buttons" onclick="pageSlide('officalLose','startingPage')">Next</button>
          </div>
-
 
       <div id="nextNightWin" class="pages">
         <!-- <div class="sherlockImg"> 
@@ -179,7 +168,7 @@
         <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
 
         <div class="nextNight__img">
-        <p style="text-align: center;"><b>You Win!</b><br>The next night, no one has reported a crime!</p>
+        <p style="text-align: center;">The next night, no one has reported a crime! <br> <b>You win!</b></p>
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
         </div>
       </div>

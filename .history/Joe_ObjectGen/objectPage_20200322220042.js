@@ -234,7 +234,7 @@ var townsPeople = {
     {
       name: "Charlie Crying",
       desc: "His face covered in tears",
-      trait: "Why is he clenching his fist?!",
+      trait: "Why is his fist clenched?!",
       imgFile:
         "url('./Assets/suspects/Characters_Charlie Crying.svg') no-repeat center"
     },
