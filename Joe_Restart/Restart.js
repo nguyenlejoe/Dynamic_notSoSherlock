@@ -293,5 +293,7 @@ function restartObjects(){
     
   firstNight = true;
 
+  checkedCulprit = [];
+
   displayHouses();
 }
