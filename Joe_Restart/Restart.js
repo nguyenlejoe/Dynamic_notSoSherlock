@@ -215,7 +215,7 @@ function restartObjects(){
     ]
   };
   
-  var townsPeople = {
+   townsPeople = {
     people: [
       {
         name: "Angela Anger",
@@ -256,7 +256,7 @@ function restartObjects(){
     ]
   };
   
-  var town = {
+  town = {
     houses: [
       {
         owner: "Henry",
