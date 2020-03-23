@@ -243,6 +243,11 @@ body {
   flex-direction: column;
 }
 
+.sherlockImgTitle {
+  display: flex;
+  justify-content: center;
+}
+
 /* For Phone */
 @media screen and (min-width: 375px) and (max-width: 812px) {
   /* Menu */
@@ -400,6 +405,11 @@ body {
   min-width: 50%;
 }
 
+.sherlockImgLose {
+  width: 50%;
+  height: 50%;
+}
+
 @media screen and (min-width: 1280px) {
   .sherlock1 {
     margin-bottom: 10%;
@@ -409,6 +419,9 @@ body {
   .sherlockImg {
     display: none;
   }
+  .sherlockImgTitle {
+    height: 100%;
+    width: 100%;
 }
 /* Colors
 Light Blue: #9BBEED, rgba(155,190,237);

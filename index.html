@@ -31,9 +31,9 @@
           <p>NOT SO SHERLOCK</p>
         </div>
 
-        <div class="sherlockImg"> 
-          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        </div>
+        <!-- <div class="sherlockImgTitle">  -->
+          <img class="sherlockImgTitle" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        <!-- </div> -->
 
         <div id="options">
           <div
@@ -145,9 +145,11 @@
 
 
       <div id="nextNightLose" class="pages">
-        <div class="sherlockImg"> 
+        <!-- <div class="sherlockImg"> 
           <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        </div>
+        </div> -->
+        <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+
         <div class="nextNight__img">
         The next night, someone has reported another crime! Lets try to find the culprit again
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
@@ -160,9 +162,11 @@
          </div>
 
       <div id="nextNightWin" class="pages">
-        <div class="sherlockImg"> 
+        <!-- <div class="sherlockImg"> 
           <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        </div>
+        </div> -->
+        <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+
         <div class="nextNight__img">
         The next night, no one has reported a crime! You win!
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
