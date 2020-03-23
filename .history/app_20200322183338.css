@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
 }
 
 .pages {
@@ -143,7 +144,7 @@ body {
   flex-direction: column;
 }
 
-#townPage h2 {
+#townPage h2{
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -206,14 +207,6 @@ body {
   font-size: 36pt;
 }
 
-#nextNightWin p{
-  text-align: center;
-}
-
-#nextNightLose p{
-  text-align: center;
-}
-
 #officalLose {
   display: none;
   justify-content: center;
@@ -223,48 +216,20 @@ body {
   padding: 10px;
 }
 
-/* sherlock image */
-.sherlockImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20%;
-}
 
-.sherlockImg img {
-  margin-top: 5%;
-  height: 400%;
-  width: 400%;
-}
+.sherlock1{
+  width: 30%;
+  height: auto;
+  max-width: 20%;
+  }
 
-#gatherPeople__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
-  .sherlock{
-    width: 10%;
-    height: auto;
-    min-width: 10%;
-    align-content: center;
-    align-self: center;
-
-    }
+.sherlock{
+  width: 20%;
+  height: auto;
+  max-width: 10%;
+  }
   
-.nextNight__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.sherlockImgTitle {
-  display: flex;
-  justify-content: center;
-}
-
 
 /* For Phone */
 @media screen and (min-width: 375px) and (max-width: 812px) {
@@ -314,6 +279,11 @@ body {
 
   #title > p {
     font-size: 35px;
+  }
+
+  .sherlockImg {
+    height: 50%;
+    width: 200%;
   }
 
   #options {
@@ -374,6 +344,7 @@ body {
     padding: 05%;
     font-size: 24px;
     text-align: center;
+    
   }
 
   /* Win or Lose screen  */
@@ -387,10 +358,6 @@ body {
     padding: 10px;
   }
 
-  #nextNightWin p{
-    text-align: center;
-  }
-
   #nextNightLose p{
     text-align: center;
   }
@@ -399,11 +366,9 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    align-content: center;
     flex-direction: column;
     font-size: 24pt;
-    padding: 10px;
-
+    margin: 10px;
   }
 
   #officalLose {
@@ -414,61 +379,14 @@ body {
     font-size: 24pt;
     padding: 10px;
   }
-
-  /* SHerlock Background */
-  .sherlockImg {
-    margin-top: 65%;
-  }
-
-  .sherlockImg img {
-    margin-top: 25%;
-    height: 400%;
-    width: 400%;
-  }
 }
-
-.sherlock1{
-  width: 100%;
-  height: auto;
-  min-width: 60%;
-  align-content: center;
-  align-self: center;
-  padding-left: 15px;
-  }
 
 .sherlock{
 width: 100%;
 height: auto;
 min-width: 50%;
-align-content: center;
-align-self: center;
-margin-left: 25px;
-
-.sherlock {
-  width: 100%;
-  height: auto;
-  min-width: 50%;
 }
 
-.sherlockImgLose {
-  width: 50%;
-  height: 50%;
-
-}
-
-@media screen and (min-width: 1280px) {
-  .sherlock1 {
-    margin-bottom: 10%;
-    height: 25%;
-    width: 25%;
-  }
-  .sherlockImg {
-    display: none;
-  }
-  .sherlockImgTitle {
-    height: 100%;
-    width: 100%;
-}
 /* Colors
 Light Blue: #9BBEED, rgba(155,190,237);
 Medium Blue: #557CB1, rgba(85,124,177);

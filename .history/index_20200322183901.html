@@ -31,9 +31,9 @@
           <p>NOT SO SHERLOCK</p>
         </div>
 
-        <!-- <div class="sherlockImgTitle">  -->
-          <img class="sherlockImgTitle" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        <!-- </div> -->
+        <div class="sherlockImg"> 
+          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
+        </div>
 
         <div id="options">
           <div
@@ -93,17 +93,11 @@
 
 
             <div id="gatherPeople" class="pages">
-              <div class="sherlockImg"> 
-                <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-              </div>
-              <!-- Had to make a div so ican put a flex to center align everything -->
-              <div id="gatherPeople__img">
               <p>Lets gather the towns people and see who the culprit is!</p>
               <div class="sherlock1">
                 <img src="./Assets/Sherlock.svg" alt="">
               </div>
               <button class="buttons" onclick="pageSlide('gatherPeople','carousel')">Next</button>
-              </div>
             </div>
 
       <!-- NOAH -->
@@ -145,23 +139,12 @@
 
 
       <div id="nextNightLose" class="pages">
-
         <p>The next night, another crime was reported.<br><b>Try again!</b></p>
         <div class="sherlock">
           <img class="sherlock" src="./Assets/Sherlock.svg" alt="">
         </div>
         <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
 
-        <!-- <div class="sherlockImg"> 
-          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        </div> -->
-        <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-
-
-        <div class="nextNight__img">
-        The next night, someone has reported another crime! Lets try to find the culprit again
-        <button class="buttons" onclick="pageSlide('nextNightLose','townPage')">Next</button>
-        </div>
       </div>
 
       <div id="officalLose" class="pages">
@@ -170,28 +153,16 @@
          </div>
 
       <div id="nextNightWin" class="pages">
-
         <p>The next night, no one has reported a crime!<br><b>You Win!</b></p>
         <div class="sherlock">
           <img  class="sherlock2" src="./Assets/Sherlock.svg" alt="">
         </div>
         <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
 
-        <!-- <div class="sherlockImg"> 
-          <img src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-        </div> -->
-        <img class="sherlockImgLose" src="./Assets/Sherlock.svg" alt="Mr.Sherlock Holmes">
-
-
-        <div class="nextNight__img">
-        The next night, no one has reported a crime! You win!
-        <button class="buttons" onclick="pageSlide('nextNightWin','startingPage')">Next</button>
-        </div>
       </div>
 
 
     </div>
-    <script src="./Joe_Restart/Restart.js"></script>
     <script src="./Joe_ObjectGen/objectPage.js"></script>
     <script src="./Joe_ObjectGen/objectGen.js"></script>
     <script src="./Alex Inductive Thinking/MultiChoice.js"></script>
