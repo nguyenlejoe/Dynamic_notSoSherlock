@@ -1,13 +1,13 @@
-html,
+/* html,
 body {
   margin: 0;
   height: 100vh;
   width: 100vw;
   background-color: rgb(155, 190, 237);
-}
+} */
 
 .tutorial {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   height: 100vh;
