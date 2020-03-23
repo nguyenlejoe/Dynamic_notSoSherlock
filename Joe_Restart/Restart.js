@@ -297,3 +297,9 @@ function restartObjects(){
 
   displayHouses();
 }
+
+function restartHome(){
+  restartObjects();
+  gameGen();
+  pageSlide('townPage', 'startingPage');
+}
