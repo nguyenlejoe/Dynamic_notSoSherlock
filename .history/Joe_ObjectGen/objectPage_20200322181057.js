@@ -39,9 +39,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Those shoes like particularily muddy!",
+      Keytrait: "Muddy footprints",
 
-      Keydesc: "Muddy footprints"
+      Keydesc: "those shoes like particularily muddy"
     },
 
     {
@@ -82,9 +82,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "They are suspiciously wealthy.",
+      Keytrait: "Treated friends to dinner",
 
-      Keydesc: "Treated friends to dinner."
+      Keydesc: "suspiciously wealthy"
     },
 
     {
@@ -124,7 +124,7 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Those fingers look rather orange.",
+      Keytrait: "Those fingers look orange.",
 
       Keydesc: "why do they smell like cheese?"
     },
@@ -207,7 +207,7 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Why would someone need a wallet that big?!",
+      Keytrait: "why would someone need a wallet that big?!",
 
       Keydesc: "They have a gigantic wallet"
     }
