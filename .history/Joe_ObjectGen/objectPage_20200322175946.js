@@ -39,9 +39,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Those shoes like particularily muddy!",
+      Keytrait: "Muddy footprints",
 
-      Keydesc: "Muddy footprints"
+      Keydesc: "those shoes like particularily muddy"
     },
 
     {
@@ -82,9 +82,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "They are suspiciously wealthy.",
+      Keytrait: "Treated friends to dinner",
 
-      Keydesc: "Treated friends to dinner."
+      Keydesc: "suspiciously wealthy"
     },
 
     {
@@ -124,7 +124,7 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Those fingers look rather orange.",
+      Keytrait: "Yellowed finger tips",
 
       Keydesc: "why do they smell like cheese?"
     },
@@ -165,9 +165,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "They have paint on their hands",
+      Keytrait: "They won't stop laughing",
 
-      Keydesc: "They won't stop laughing"
+      Keydesc: "seem they have paint on their hands"
     },
 
     {
@@ -207,9 +207,9 @@ var officalCrimes = {
         }
       ],
 
-      Keytrait: "Why would someone need a wallet that big?!",
+      Keytrait: "They have a gigantic wallet",
 
-      Keydesc: "They have a gigantic wallet"
+      Keydesc: "why would someone need a wallet that big?!"
     }
   ]
 };
@@ -218,8 +218,8 @@ var townsPeople = {
   people: [
     {
       name: "Angela Anger",
-      desc: "But she always seems mad!",
-      trait: "She seems angry.",
+      desc: "She always seems mad!",
+      trait: "She seems to get angry quickly",
       imgFile:
 
         "url('./Assets/suspects/Characters_Angela Anger.svg') no-repeat center"
