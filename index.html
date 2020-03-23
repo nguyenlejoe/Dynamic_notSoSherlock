@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="Joe_SuggestionBox/suggestionBox.css">
+    <link rel="stylesheet" href="/tutorial/tutorial.css">
   </head>
   <body>
     <audio class="audioToggle" src="./Assets/Death Note - (L's Theme A) Music.mp3"></audio>
@@ -43,9 +44,54 @@
           >
             START
           </div>
-          <div id="tutorial" class="buttons">TUTORIAL</div>
+          <div id="tutorial" class="buttons" onclick="pageSlide('startingPage','tutorialPage')">TUTORIAL</div>
         </div>
       </div>
+
+            <!-- Tutorial -->
+            <div class="tutorial pages" id="tutorialPage">
+              <h1 id="tutorial__title">Tutorial</h1>
+              <div class="tutorial__content">
+                <div class="tutorial__defs">
+                  <h2>Objective of the Game</h2>
+                  <p>
+                    Hey there! In this game you will be playing as legendary detective
+                    Sherlock! You'll go through the game using inductive and deductive
+                    skills to determine what crimes happened and who committed them.
+                    Best of luck!
+                  </p>
+                </div>
+                <div id="tutorial--br">
+                  <br />
+                </div>
+                <div class="tutorial__defs">
+                  <h2>What is Inductive Reasoning?</h2>
+                  <p>
+                    Think of it as... determining things from bottom to top! You form an
+                    opinion based on something you observe. <br />
+                    <br />
+                    For example: <br />
+                    1. All the basketballs I've played with are leather. <br />
+                    2. That means all basketballs are made of leather.
+                  </p>
+                </div>
+              </div>
+              <div class="tutorial__defs">
+                <h2>What is Deductive Reasoning?</h2>
+                <p>
+                  It's kind of like thinking about things from the top down! You form a
+                  question and then argue against it. If there's no arguments to be
+                  made, the question is true! <br />
+                  <br />
+                  For example: <br />
+                  1. Dogs go woof woof <br />
+                  2. Cherrie goes woof woof <br />
+                  3. Therefore Cherrie is a dog.
+                </p>
+                </div>
+                <button class="buttons" onclick="pageSlide('tutorialPage','townPage')">Play</button>
+
+              </div>
 
       <!-- TOWN PAGE -->
       <div id="townPage" class="pages">
@@ -65,7 +111,7 @@
           </div> -->
         </div>
       </div>
-      
+
     <!-- ALEX -->
 
             <div id="clueStage" class="pages">
